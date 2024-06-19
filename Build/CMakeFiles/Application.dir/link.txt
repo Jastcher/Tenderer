@@ -1,0 +1,1 @@
+/usr/bin/clang++ CMakeFiles/Application.dir/Sandbox/app.cpp.o -o /home/jastcher/Programming/c++/Tenderer/bin/Application  libTenderer.a

@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/jastcher/Programming/c++/Tenderer/Build",
+  "command": "/usr/bin/clang++  -I/home/jastcher/Programming/c++/Tenderer/Tenderer/src -I/home/jastcher/Programming/c++/Tenderer/Tenderer/Vendor/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o -c /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.cpp",
+  "file": "/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.cpp",
+  "output": "CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/c++/Tenderer/Build",
+  "command": "/usr/bin/clang++  -I/home/jastcher/Programming/c++/Tenderer/Tenderer/src -I/home/jastcher/Programming/c++/Tenderer/Tenderer/Vendor/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o -c /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.cpp",
+  "file": "/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.cpp",
+  "output": "CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/c++/Tenderer/Build",
+  "command": "/usr/bin/clang++  -I/home/jastcher/Programming/c++/Tenderer/Tenderer/src -I/home/jastcher/Programming/c++/Tenderer/Tenderer/Vendor/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o -c /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.cpp",
+  "file": "/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.cpp",
+  "output": "CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/c++/Tenderer/Build",
+  "command": "/usr/bin/clang++  -I/home/jastcher/Programming/c++/Tenderer/Tenderer/src -I/home/jastcher/Programming/c++/Tenderer/Tenderer/Vendor/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/Application.dir/Sandbox/app.cpp.o -c /home/jastcher/Programming/c++/Tenderer/Sandbox/app.cpp",
+  "file": "/home/jastcher/Programming/c++/Tenderer/Sandbox/app.cpp",
+  "output": "CMakeFiles/Application.dir/Sandbox/app.cpp.o"
+}
+]
