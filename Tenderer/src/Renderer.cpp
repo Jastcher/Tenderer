@@ -1,6 +1,7 @@
 #include "Renderer.h"
 #include <cstring>
 #include <sstream>
+#include <cmath>
 #include <vector>
 #include <iostream>
 
@@ -46,9 +47,9 @@ void Renderer::RenderScreen(Buffer<T>& buffer, Buffer<T>& compBuffer)
 
   compBuffer = buffer;
 
-	pixelChanges.clear();
 }
-void Renderer::Point(unsigned int x, unsigned int y, const Pixel& color)
+template<typename T>
+void Renderer::Point(Buffer<T>& buffer, unsigned int x, unsigned int y, const Pixel& color)
 {
 	buffer[INDEX2D(x, y)] = color;
 	pixelChanges.push_back(INDEX2D(x, y));
