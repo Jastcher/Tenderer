@@ -3,6 +3,7 @@
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.cpp \
   /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.h \
+  /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Buffer.h \
   /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.h \
   /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.h \
   /usr/include/c++/14.1.1/backward/auto_ptr.h \
@@ -54,11 +55,9 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/c++/14.1.1/bits/shared_ptr.h \
   /usr/include/c++/14.1.1/bits/shared_ptr_atomic.h \
   /usr/include/c++/14.1.1/bits/shared_ptr_base.h \
-  /usr/include/c++/14.1.1/bits/specfun.h \
   /usr/include/c++/14.1.1/bits/sstream.tcc \
   /usr/include/c++/14.1.1/bits/std_abs.h \
   /usr/include/c++/14.1.1/bits/stl_algobase.h \
-  /usr/include/c++/14.1.1/bits/stl_bvector.h \
   /usr/include/c++/14.1.1/bits/stl_construct.h \
   /usr/include/c++/14.1.1/bits/stl_function.h \
   /usr/include/c++/14.1.1/bits/stl_iterator.h \
@@ -68,7 +67,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/c++/14.1.1/bits/stl_raw_storage_iter.h \
   /usr/include/c++/14.1.1/bits/stl_tempbuf.h \
   /usr/include/c++/14.1.1/bits/stl_uninitialized.h \
-  /usr/include/c++/14.1.1/bits/stl_vector.h \
   /usr/include/c++/14.1.1/bits/streambuf.tcc \
   /usr/include/c++/14.1.1/bits/streambuf_iterator.h \
   /usr/include/c++/14.1.1/bits/string_view.tcc \
@@ -77,12 +75,10 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/c++/14.1.1/bits/uses_allocator.h \
   /usr/include/c++/14.1.1/bits/uses_allocator_args.h \
   /usr/include/c++/14.1.1/bits/utility.h \
-  /usr/include/c++/14.1.1/bits/vector.tcc \
   /usr/include/c++/14.1.1/bits/version.h \
   /usr/include/c++/14.1.1/cctype \
   /usr/include/c++/14.1.1/cerrno \
   /usr/include/c++/14.1.1/clocale \
-  /usr/include/c++/14.1.1/cmath \
   /usr/include/c++/14.1.1/concepts \
   /usr/include/c++/14.1.1/cstddef \
   /usr/include/c++/14.1.1/cstdio \
@@ -104,7 +100,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/c++/14.1.1/iosfwd \
   /usr/include/c++/14.1.1/iostream \
   /usr/include/c++/14.1.1/istream \
-  /usr/include/c++/14.1.1/limits \
   /usr/include/c++/14.1.1/memory \
   /usr/include/c++/14.1.1/new \
   /usr/include/c++/14.1.1/ostream \
@@ -117,22 +112,9 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/c++/14.1.1/string \
   /usr/include/c++/14.1.1/string_view \
   /usr/include/c++/14.1.1/system_error \
-  /usr/include/c++/14.1.1/tr1/bessel_function.tcc \
-  /usr/include/c++/14.1.1/tr1/beta_function.tcc \
-  /usr/include/c++/14.1.1/tr1/ell_integral.tcc \
-  /usr/include/c++/14.1.1/tr1/exp_integral.tcc \
-  /usr/include/c++/14.1.1/tr1/gamma.tcc \
-  /usr/include/c++/14.1.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/14.1.1/tr1/legendre_function.tcc \
-  /usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/14.1.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/14.1.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/14.1.1/tr1/special_function_util.h \
   /usr/include/c++/14.1.1/tuple \
   /usr/include/c++/14.1.1/type_traits \
   /usr/include/c++/14.1.1/typeinfo \
-  /usr/include/c++/14.1.1/vector \
   /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -162,22 +144,13 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
   /usr/include/bits/getopt_core.h \
   /usr/include/bits/getopt_posix.h \
   /usr/include/bits/ioctl-types.h \
   /usr/include/bits/ioctls.h \
-  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
@@ -241,7 +214,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/linux/errno.h \
   /usr/include/linux/ioctl.h \
   /usr/include/locale.h \
-  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -254,7 +226,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
-  /usr/include/tbb/tbb.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
@@ -749,25 +720,27 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/string.h:
 
-/usr/include/c++/14.1.1/cstring:
+/usr/include/math.h:
 
-/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.cpp:
+/usr/include/bits/mathcalls-narrow.h:
 
-/usr/lib/clang/17/include/stddef.h:
+/usr/include/bits/mathcalls-helper-functions.h:
 
-/usr/lib/clang/17/include/stdarg.h:
+/usr/include/bits/math-vector.h:
 
-/usr/lib/clang/17/include/sanitizer/tsan_interface.h:
+/usr/include/bits/libm-simd-decl-stubs.h:
 
-/usr/lib/clang/17/include/__stddef_max_align_t.h:
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
-/usr/include/c++/14.1.1/tr1/legendre_function.tcc:
-
-/usr/include/c++/14.1.1/tr1/exp_integral.tcc:
+/usr/include/c++/14.1.1/initializer_list:
 
 /usr/include/c++/14.1.1/tr1/ell_integral.tcc:
 
-/usr/include/c++/14.1.1/tr1/bessel_function.tcc:
+/usr/include/c++/14.1.1/istream:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/c++/14.1.1/system_error:
 
@@ -775,9 +748,15 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/cerrno:
 
-/usr/include/math.h:
+/usr/include/bits/iscanonical.h:
+
+/usr/include/c++/14.1.1/pstl/pstl_config.h:
 
 /usr/include/c++/14.1.1/tr1/poly_laguerre.tcc:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/c++/14.1.1/pstl/execution_defs.h:
 
 /usr/include/c++/14.1.1/ostream:
 
@@ -785,15 +764,15 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/14.1.1/istream:
+/usr/lib/clang/17/include/stddef.h:
 
-/usr/include/c++/14.1.1/tr1/hypergeometric.tcc:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/usr/include/wchar.h:
+/usr/include/c++/14.1.1/tr1/gamma.tcc:
 
 /usr/include/c++/14.1.1/iosfwd:
+
+/usr/include/c++/14.1.1/ext/string_conversions.h:
+
+/usr/include/c++/14.1.1/ext/concurrence.h:
 
 /usr/include/c++/14.1.1/string_view:
 
@@ -801,7 +780,9 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/ext/numeric_traits.h:
 
-/usr/include/sys/select.h:
+/usr/include/c++/14.1.1/bits/stl_algobase.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/14.1.1/ext/alloc_traits.h:
 
@@ -823,19 +804,11 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/cstdio:
 
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/c++/14.1.1/cmath:
-
 /usr/include/c++/14.1.1/cctype:
 
-/usr/include/c++/14.1.1/ext/string_conversions.h:
+/usr/include/c++/14.1.1/typeinfo:
 
-/usr/include/c++/14.1.1/ext/concurrence.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/c++/14.1.1/bits/stl_algobase.h:
+/usr/include/c++/14.1.1/bits/basic_ios.h:
 
 /usr/include/c++/14.1.1/cstddef:
 
@@ -847,35 +820,13 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/bits/stl_bvector.h:
 
-/usr/include/bits/ioctl-types.h:
-
-/usr/include/locale.h:
-
-/usr/include/c++/14.1.1/initializer_list:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/environments.h:
-
 /usr/include/c++/14.1.1/ext/atomicity.h:
 
 /usr/include/bits/uintn-identity.h:
 
-/usr/include/c++/14.1.1/pstl/glue_memory_defs.h:
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
-/usr/include/c++/14.1.1/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/14.1.1/bits/stl_uninitialized.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/c++/14.1.1/tr1/riemann_zeta.tcc:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/c++/14.1.1/bits/memoryfwd.h:
+/usr/include/c++/14.1.1/bits/stl_tempbuf.h:
 
 /usr/include/c++/14.1.1/bits/functional_hash.h:
 
@@ -888,10 +839,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/bits/floatn-common.h:
 
 /usr/include/c++/14.1.1/bits/concept_check.h:
-
-/usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc:
-
-/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.h:
 
 /usr/include/c++/14.1.1/bits/locale_classes.tcc:
 
@@ -907,23 +854,35 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/backward/auto_ptr.h:
 
-/usr/include/pthread.h:
-
-/usr/include/c++/14.1.1/exception:
-
 /usr/include/c++/14.1.1/bits/refwrap.h:
 
 /usr/include/sys/single_threaded.h:
 
-/usr/include/c++/14.1.1/bits/basic_ios.h:
-
-/usr/include/c++/14.1.1/typeinfo:
-
 /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.cpp:
+
+/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Buffer.h:
+
+/usr/include/linux/errno.h:
+
+/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.h:
+
+/usr/include/c++/14.1.1/bits/string_view.tcc:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/14.1.1/bits/stl_iterator.h:
 
 /usr/include/c++/14.1.1/bits/streambuf.tcc:
 
-/usr/include/c++/14.1.1/bits/stl_iterator.h:
+/usr/include/bits/mathcalls.h:
+
+/usr/include/c++/14.1.1/bits/requires_hosted.h:
+
+/usr/include/c++/14.1.1/bits/allocator.h:
+
+/usr/include/c++/14.1.1/bits/invoke.h:
+
+/usr/include/c++/14.1.1/bits/stl_pair.h:
 
 /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.h:
 
@@ -933,9 +892,13 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/bits/allocated_ptr.h:
 
-/usr/include/c++/14.1.1/bits/char_traits.h:
+/usr/include/c++/14.1.1/bits/atomic_lockfree_defines.h:
 
-/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.h:
+/usr/include/c++/14.1.1/bits/stl_uninitialized.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/c++/14.1.1/bits/char_traits.h:
 
 /usr/include/c++/14.1.1/streambuf:
 
@@ -953,15 +916,21 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/ioctls.h:
 
-/usr/include/c++/14.1.1/bits/requires_hosted.h:
-
-/usr/include/bits/mathcalls.h:
-
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/bits/types/clock_t.h:
 
+/usr/include/c++/14.1.1/pstl/glue_memory_defs.h:
+
+/usr/include/tbb/tbb.h:
+
+/usr/include/c++/14.1.1/bits/stl_function.h:
+
 /usr/include/c++/14.1.1/backward/binders.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/14.1.1/tr1/hypergeometric.tcc:
 
 /usr/include/c++/14.1.1/bits/basic_string.tcc:
 
@@ -979,15 +948,27 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/byteswap.h:
 
-/usr/include/c++/14.1.1/bits/specfun.h:
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/14.1.1/bits/alloc_traits.h:
 
 /usr/include/c++/14.1.1/concepts:
 
-/usr/include/c++/14.1.1/bits/allocator.h:
-
 /usr/include/c++/14.1.1/bits/exception.h:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/c++/14.1.1/iostream:
+
+/usr/include/c++/14.1.1/exception:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/14.1.1/bits/memoryfwd.h:
 
 /usr/include/c++/14.1.1/bits/ios_base.h:
 
@@ -1005,14 +986,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/bits/shared_ptr_atomic.h:
 
-/usr/lib/clang/17/include/stdint.h:
-
-/usr/include/bits/wctype-wchar.h:
-
-/usr/include/c++/14.1.1/bits/stl_vector.h:
-
-/usr/include/sys/types.h:
-
 /usr/include/asm/ioctls.h:
 
 /usr/include/c++/14.1.1/bits/locale_facets.h:
@@ -1022,10 +995,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/c++/14.1.1/bits/ptr_traits.h:
 
 /usr/include/c++/14.1.1/ios:
-
-/usr/include/bits/mathcalls-narrow.h:
-
-/usr/include/c++/14.1.1/tr1/gamma.tcc:
 
 /usr/include/c++/14.1.1/bits/ostream_insert.h:
 
@@ -1037,17 +1006,7 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/14.1.1/bits/nested_exception.h:
 
-/usr/include/c++/14.1.1/memory:
-
-/usr/include/c++/14.1.1/tr1/beta_function.tcc:
-
-/usr/include/bits/libc-header-start.h:
-
 /usr/include/c++/14.1.1/bits/new_allocator.h:
-
-/usr/include/c++/14.1.1/bits/stl_function.h:
-
-/usr/include/tbb/tbb.h:
 
 /usr/include/c++/14.1.1/cstdlib:
 
@@ -1061,9 +1020,13 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/stdc-predef.h:
 
+/usr/include/c++/14.1.1/type_traits:
+
 /usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/14.1.1/bits/range_access.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
 /usr/include/c++/14.1.1/bits/sstream.tcc:
 
@@ -1071,47 +1034,9 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/gnu/stubs.h:
 
-/usr/include/c++/14.1.1/bits/invoke.h:
-
-/usr/include/c++/14.1.1/bits/stl_pair.h:
-
-/usr/include/c++/14.1.1/tr1/special_function_util.h:
-
-/usr/include/c++/14.1.1/type_traits:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
-
-/usr/include/c++/14.1.1/vector:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/c++/14.1.1/pstl/execution_defs.h:
-
-/usr/include/asm/ioctl.h:
-
-/usr/include/c++/14.1.1/bits/stl_tempbuf.h:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
-
-/usr/include/c++/14.1.1/bits/string_view.tcc:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
-
-/usr/include/asm-generic/errno-base.h:
-
 /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
 /usr/include/asm-generic/errno.h:
-
-/usr/include/linux/ioctl.h:
-
-/usr/include/c++/14.1.1/iostream:
-
-/usr/include/bits/fp-logb.h:
 
 /usr/include/asm-generic/ioctl.h:
 
@@ -1131,6 +1056,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/confname.h:
 
+/usr/lib/clang/17/include/__stddef_max_align_t.h:
+
 /usr/include/bits/cpu-set.h:
 
 /usr/include/c++/14.1.1/string:
@@ -1139,29 +1066,27 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/endianness.h:
 
-/usr/include/bits/flt-eval-method.h:
-
-/usr/include/c++/14.1.1/limits:
-
-/usr/include/c++/14.1.1/bits/charconv.h:
-
-/usr/include/bits/types/FILE.h:
-
 /usr/include/bits/getopt_core.h:
 
-/usr/include/c++/14.1.1/pstl/pstl_config.h:
+/usr/include/bits/ioctl-types.h:
 
-/usr/include/bits/iscanonical.h:
+/usr/include/locale.h:
 
-/usr/include/bits/libm-simd-decl-stubs.h:
+/usr/include/sys/types.h:
+
+/usr/include/c++/14.1.1/bits/stl_vector.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/c++/14.1.1/memory:
+
+/usr/include/c++/14.1.1/tr1/beta_function.tcc:
 
 /usr/include/c++/14.1.1/bit:
 
 /usr/include/bits/locale.h:
 
 /usr/include/bits/long-double.h:
-
-/usr/include/bits/math-vector.h:
 
 /usr/include/bits/pthreadtypes.h:
 
@@ -1182,6 +1107,14 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/bits/timesize.h:
 
 /usr/include/bits/types.h:
+
+/usr/include/c++/14.1.1/limits:
+
+/usr/include/c++/14.1.1/bits/charconv.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/bits/flt-eval-method.h:
 
 /usr/include/bits/sched.h:
 
@@ -1206,6 +1139,12 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/bits/types/mbstate_t.h:
 
 /usr/include/bits/types/sigset_t.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/14.1.1/tr1/legendre_function.tcc:
 
 /usr/include/bits/types/struct_sched_param.h:
 
@@ -1249,14 +1188,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/gnu/stubs-64.h:
 
-/usr/include/linux/errno.h:
-
-/usr/include/wctype.h:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/include/sched.h:
-
 /usr/include/endian.h:
 
 /usr/include/stdint.h:
@@ -1269,6 +1200,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/sys/cdefs.h:
 
+/usr/include/sys/select.h:
+
 /usr/include/sys/ttydefaults.h:
 
 /usr/include/c++/14.1.1/bits/shared_ptr_base.h:
@@ -1278,3 +1211,43 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/time.h:
 
 /usr/include/unistd.h:
+
+/usr/lib/clang/17/include/sanitizer/tsan_interface.h:
+
+/usr/lib/clang/17/include/stdarg.h:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/lib/clang/17/include/stdint.h:
+
+/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.cpp:
+
+/usr/include/c++/14.1.1/bits/specfun.h:
+
+/usr/include/c++/14.1.1/cmath:
+
+/usr/include/c++/14.1.1/cstring:
+
+/usr/include/c++/14.1.1/tr1/bessel_function.tcc:
+
+/usr/include/c++/14.1.1/tr1/exp_integral.tcc:
+
+/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.h:
+
+/usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/c++/14.1.1/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/14.1.1/tr1/special_function_util.h:
+
+/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/c++/14.1.1/vector:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/fp-fast.h:

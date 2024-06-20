@@ -4,6 +4,7 @@
 CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.cpp
  /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.h
+ /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Buffer.h
  /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.h
  /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.h
  /usr/include/c++/14.1.1/backward/auto_ptr.h
@@ -55,11 +56,9 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/c++/14.1.1/bits/shared_ptr.h
  /usr/include/c++/14.1.1/bits/shared_ptr_atomic.h
  /usr/include/c++/14.1.1/bits/shared_ptr_base.h
- /usr/include/c++/14.1.1/bits/specfun.h
  /usr/include/c++/14.1.1/bits/sstream.tcc
  /usr/include/c++/14.1.1/bits/std_abs.h
  /usr/include/c++/14.1.1/bits/stl_algobase.h
- /usr/include/c++/14.1.1/bits/stl_bvector.h
  /usr/include/c++/14.1.1/bits/stl_construct.h
  /usr/include/c++/14.1.1/bits/stl_function.h
  /usr/include/c++/14.1.1/bits/stl_iterator.h
@@ -69,7 +68,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/c++/14.1.1/bits/stl_raw_storage_iter.h
  /usr/include/c++/14.1.1/bits/stl_tempbuf.h
  /usr/include/c++/14.1.1/bits/stl_uninitialized.h
- /usr/include/c++/14.1.1/bits/stl_vector.h
  /usr/include/c++/14.1.1/bits/streambuf.tcc
  /usr/include/c++/14.1.1/bits/streambuf_iterator.h
  /usr/include/c++/14.1.1/bits/string_view.tcc
@@ -78,12 +76,10 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/c++/14.1.1/bits/uses_allocator.h
  /usr/include/c++/14.1.1/bits/uses_allocator_args.h
  /usr/include/c++/14.1.1/bits/utility.h
- /usr/include/c++/14.1.1/bits/vector.tcc
  /usr/include/c++/14.1.1/bits/version.h
  /usr/include/c++/14.1.1/cctype
  /usr/include/c++/14.1.1/cerrno
  /usr/include/c++/14.1.1/clocale
- /usr/include/c++/14.1.1/cmath
  /usr/include/c++/14.1.1/concepts
  /usr/include/c++/14.1.1/cstddef
  /usr/include/c++/14.1.1/cstdio
@@ -105,7 +101,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/c++/14.1.1/iosfwd
  /usr/include/c++/14.1.1/iostream
  /usr/include/c++/14.1.1/istream
- /usr/include/c++/14.1.1/limits
  /usr/include/c++/14.1.1/memory
  /usr/include/c++/14.1.1/new
  /usr/include/c++/14.1.1/ostream
@@ -118,22 +113,9 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/c++/14.1.1/string
  /usr/include/c++/14.1.1/string_view
  /usr/include/c++/14.1.1/system_error
- /usr/include/c++/14.1.1/tr1/bessel_function.tcc
- /usr/include/c++/14.1.1/tr1/beta_function.tcc
- /usr/include/c++/14.1.1/tr1/ell_integral.tcc
- /usr/include/c++/14.1.1/tr1/exp_integral.tcc
- /usr/include/c++/14.1.1/tr1/gamma.tcc
- /usr/include/c++/14.1.1/tr1/hypergeometric.tcc
- /usr/include/c++/14.1.1/tr1/legendre_function.tcc
- /usr/include/c++/14.1.1/tr1/modified_bessel_func.tcc
- /usr/include/c++/14.1.1/tr1/poly_hermite.tcc
- /usr/include/c++/14.1.1/tr1/poly_laguerre.tcc
- /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc
- /usr/include/c++/14.1.1/tr1/special_function_util.h
  /usr/include/c++/14.1.1/tuple
  /usr/include/c++/14.1.1/type_traits
  /usr/include/c++/14.1.1/typeinfo
- /usr/include/c++/14.1.1/vector
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h
@@ -163,22 +145,13 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/bits/errno.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
- /usr/include/bits/flt-eval-method.h
- /usr/include/bits/fp-fast.h
- /usr/include/bits/fp-logb.h
  /usr/include/bits/getopt_core.h
  /usr/include/bits/getopt_posix.h
  /usr/include/bits/ioctl-types.h
  /usr/include/bits/ioctls.h
- /usr/include/bits/iscanonical.h
  /usr/include/bits/libc-header-start.h
- /usr/include/bits/libm-simd-decl-stubs.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
- /usr/include/bits/math-vector.h
- /usr/include/bits/mathcalls-helper-functions.h
- /usr/include/bits/mathcalls-narrow.h
- /usr/include/bits/mathcalls.h
  /usr/include/bits/posix_opt.h
  /usr/include/bits/pthread_stack_min-dynamic.h
  /usr/include/bits/pthreadtypes-arch.h
@@ -242,7 +215,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/linux/errno.h
  /usr/include/linux/ioctl.h
  /usr/include/locale.h
- /usr/include/math.h
  /usr/include/pthread.h
  /usr/include/sched.h
  /usr/include/stdc-predef.h
@@ -255,7 +227,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/sys/single_threaded.h
  /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
- /usr/include/tbb/tbb.h
  /usr/include/time.h
  /usr/include/unistd.h
  /usr/include/wchar.h

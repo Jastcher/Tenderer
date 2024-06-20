@@ -16,7 +16,7 @@ class Renderer
 	Renderer(std::shared_ptr<Terminal> _terminal);
 	~Renderer();
 
-	template<typename T = Pixel> void RenderScreen(const Buffer<T>& buffer);
+	template<typename T = Pixel> void RenderScreen(Buffer<T>& buffer, Buffer<T>& compBuffer);
 
 	template<typename T = Pixel> void Fill(const Buffer<T>& buffer, const T& color);
 	template<typename T = Pixel>

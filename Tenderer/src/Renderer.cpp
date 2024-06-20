@@ -20,15 +20,18 @@ template<typename T> void Renderer::Fill(const Buffer<T>& buffer, const T& color
 	for(size_t i = 0; i < buffer.size(); i++) { buffer[i] = color; }
 }
 
-void Renderer::RenderScreen()
+template<typename T>
+void Renderer::RenderScreen(Buffer<T>& buffer, Buffer<T>& compBuffer)
 {
 	// index = y * width + x
 	// x = index/(y * width)
 	// y = index / width - x
 
 	std::stringstream ss;
-	for(auto i : pixelChanges)
+	for(unsigned int i = 0; i < buffer.Size(); i++) 
 	{
+    if (buffer[i] == compBuffer[i]) continue;
+
 		// std::cout << i << std::endl;
 		// std::cout << "changed color to " << buffer[i].r << " " << buffer[i].g << " " << buffer[i].b << std::endl;
 		// std::cout << "Changing pos to: " << i % terminal->props.width << " "
@@ -40,6 +43,8 @@ void Renderer::RenderScreen()
 	}
 
 	std::cout << ss.str() << std::flush;
+
+  compBuffer = buffer;
 
 	pixelChanges.clear();
 }

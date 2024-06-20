@@ -190,6 +190,30 @@ Tenderer/src/Application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.s
 .PHONY : Tenderer/src/Application.cpp.s
 
+Tenderer/src/Buffer.o: Tenderer/src/Buffer.cpp.o
+.PHONY : Tenderer/src/Buffer.o
+
+# target to build an object file
+Tenderer/src/Buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o
+.PHONY : Tenderer/src/Buffer.cpp.o
+
+Tenderer/src/Buffer.i: Tenderer/src/Buffer.cpp.i
+.PHONY : Tenderer/src/Buffer.i
+
+# target to preprocess a source file
+Tenderer/src/Buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.i
+.PHONY : Tenderer/src/Buffer.cpp.i
+
+Tenderer/src/Buffer.s: Tenderer/src/Buffer.cpp.s
+.PHONY : Tenderer/src/Buffer.s
+
+# target to generate assembly for a file
+Tenderer/src/Buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.s
+.PHONY : Tenderer/src/Buffer.cpp.s
+
 Tenderer/src/Renderer.o: Tenderer/src/Renderer.cpp.o
 .PHONY : Tenderer/src/Renderer.o
 
@@ -254,6 +278,9 @@ help:
 	@echo "... Tenderer/src/Application.o"
 	@echo "... Tenderer/src/Application.i"
 	@echo "... Tenderer/src/Application.s"
+	@echo "... Tenderer/src/Buffer.o"
+	@echo "... Tenderer/src/Buffer.i"
+	@echo "... Tenderer/src/Buffer.s"
 	@echo "... Tenderer/src/Renderer.o"
 	@echo "... Tenderer/src/Renderer.i"
 	@echo "... Tenderer/src/Renderer.s"

@@ -83,10 +83,24 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.cpp -o CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.s
 
+CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o: CMakeFiles/Tenderer.dir/flags.make
+CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o: /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Buffer.cpp
+CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o: CMakeFiles/Tenderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o -MF CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o.d -o CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o -c /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Buffer.cpp
+
+CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Buffer.cpp > CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.i
+
+CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Buffer.cpp -o CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.s
+
 CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o: CMakeFiles/Tenderer.dir/flags.make
 CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o: /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.cpp
 CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o: CMakeFiles/Tenderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o -MF CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o.d -o CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o -c /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.cpp
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.s: cmake_force
 CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: CMakeFiles/Tenderer.dir/flags.make
 CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.cpp
 CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: CMakeFiles/Tenderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o -MF CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o.d -o CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o -c /home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.cpp
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.i: cmake_force
@@ -114,6 +128,7 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.s: cmake_force
 # Object files for target Tenderer
 Tenderer_OBJECTS = \
 "CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o" \
+"CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o" \
 "CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o" \
 "CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o"
 
@@ -121,11 +136,12 @@ Tenderer_OBJECTS = \
 Tenderer_EXTERNAL_OBJECTS =
 
 libTenderer.a: CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
+libTenderer.a: CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o
 libTenderer.a: CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o
 libTenderer.a: CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o
 libTenderer.a: CMakeFiles/Tenderer.dir/build.make
 libTenderer.a: CMakeFiles/Tenderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libTenderer.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libTenderer.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Tenderer.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Tenderer.dir/link.txt --verbose=$(VERBOSE)
 

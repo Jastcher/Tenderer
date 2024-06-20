@@ -21,6 +21,12 @@ template<typename T> class Buffer
 
 	T& Get(size_t x, size_t y);
 	T& operator[](size_t index) const;
+ 
+  void operator=(const Buffer& other) {
+    for (size_t i = 0; i < size; i++) {
+      data[i] = other[i];
+    }
+  }
 
   private:
 	size_t size;

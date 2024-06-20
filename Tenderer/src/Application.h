@@ -28,9 +28,9 @@ class Application
   private:
 	std::shared_ptr<Terminal> p_Terminal;
 	std::shared_ptr<Renderer> p_Renderer;
-	Buffer<Pixel> buffer;
 
-	std::vector<unsigned int> changes;
+	Buffer<Pixel> buffer;
+	Buffer<Pixel> compBuffer;
 };
 
 } // namespace Tenderer
