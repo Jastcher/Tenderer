@@ -1,0 +1,64 @@
+# ----------------------------
+# C++ & CMake .gitignore
+# ----------------------------
+
+# Build directories
+/build/
+/build-*/
+/out/
+/bin/
+/lib/
+/dist/
+
+# CMake build files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Makefile
+
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Compiled Dynamic Libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static Libraries
+*.a
+*.lib
+*.lai
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug and profiling files
+*.gcda
+*.gcno
+*.gcov
+*.gch
+*.pdb
+*.mod
+*.dSYM/
+*.ipch
+*.obj/
+*.idb
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+*.userosscache
+*.sln
+*.vcxproj*
+CMakeSettings.
+
