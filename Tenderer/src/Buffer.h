@@ -4,34 +4,40 @@
 #include <memory>
 #include <sys/types.h>
 
-namespace Tenderer
-{
+namespace Tenderer {
 
-template<typename T> class Buffer
-{
-  public:
-	Buffer(size_t width, size_t height);
-	~Buffer();
+struct Color {
+  unsigned char r, g, b;
 
-	void Resize(size_t width, size_t height);
+  bool operator==(const Color &other) {
+    return r == other.r && g == other.g && b == other.b;
+  }
+};
 
-	size_t Size() const;
-	size_t Width() const;
-	size_t Height() const;
+class Buffer {
+public:
+  Buffer(size_t width, size_t height);
+  ~Buffer();
 
-	T& Get(size_t x, size_t y);
-	T& operator[](size_t index) const;
- 
-  void operator=(const Buffer& other) {
+  void Resize(size_t width, size_t height);
+
+  size_t Size() const;
+  size_t Width() const;
+  size_t Height() const;
+
+  Color &Get(size_t x, size_t y);
+  Color &operator[](size_t index) const;
+
+  void operator=(const Buffer &other) {
     for (size_t i = 0; i < size; i++) {
       data[i] = other[i];
     }
   }
 
-  private:
-	size_t size;
-	size_t width;
-	size_t height;
-	std::unique_ptr<T> data;
+private:
+  size_t size;
+  size_t width;
+  size_t height;
+  std::unique_ptr<Color[]> data;
 };
 } // namespace Tenderer

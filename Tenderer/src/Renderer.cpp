@@ -1,58 +1,51 @@
 #include "Renderer.h"
-#include <cstring>
-#include <sstream>
 #include <cmath>
-#include <vector>
+#include <cstring>
 #include <iostream>
+#include <sstream>
+#include <vector>
 
-namespace Tenderer
-{
+namespace Tenderer {
 
-Renderer::Renderer(std::shared_ptr<Terminal> _terminal) : terminal(_terminal)
-{
+Renderer::Renderer(std::shared_ptr<Terminal> _terminal) : terminal(_terminal) {}
+
+Renderer::~Renderer() {}
+
+void Renderer::Fill(const Buffer &buffer, const Color &color) {
+  for (size_t i = 0; i < buffer.Size(); i++) {
+    buffer[i] = color;
+  }
 }
 
-Renderer::~Renderer()
-{
-}
+void Renderer::RenderScreen(Buffer &buffer, Buffer &compBuffer) {
+  // index = y * width + x
+  // x = index/(y * width)
+  // y = index / width - x
 
-template<typename T> void Renderer::Fill(const Buffer<T>& buffer, const T& color)
-{
-	for(size_t i = 0; i < buffer.size(); i++) { buffer[i] = color; }
-}
+  std::stringstream ss;
+  for (unsigned int i = 0; i < buffer.Size(); i++) {
+    if (buffer[i] == compBuffer[i])
+      continue;
 
-template<typename T>
-void Renderer::RenderScreen(Buffer<T>& buffer, Buffer<T>& compBuffer)
-{
-	// index = y * width + x
-	// x = index/(y * width)
-	// y = index / width - x
+    // std::cout << i << std::endl;
+    // std::cout << "changed color to " << buffer[i].r << " " << buffer[i].g <<
+    // " " << buffer[i].b << std::endl; std::cout << "Changing pos to: " << i %
+    // terminal->props.width << " "
+    //<< std::floor(i / terminal->props.width)
+    //<< std::endl;
 
-	std::stringstream ss;
-	for(unsigned int i = 0; i < buffer.Size(); i++) 
-	{
-    if (buffer[i] == compBuffer[i]) continue;
+    terminal->GetPos(ss, i % terminal->props.width,
+                     std::floor(i / terminal->props.width));
+    terminal->GetColor(ss, buffer[i]);
+  }
 
-		// std::cout << i << std::endl;
-		// std::cout << "changed color to " << buffer[i].r << " " << buffer[i].g << " " << buffer[i].b << std::endl;
-		// std::cout << "Changing pos to: " << i % terminal->props.width << " "
-		//<< std::floor(i / terminal->props.width)
-		//<< std::endl;
-
-		terminal->GetPos(ss, i % terminal->props.width, std::floor(i / terminal->props.width));
-		terminal->GetColor(ss, buffer[i]);
-	}
-
-	std::cout << ss.str() << std::flush;
+  std::cout << ss.str() << std::flush;
 
   compBuffer = buffer;
-
 }
-template<typename T>
-void Renderer::Point(Buffer<T>& buffer, unsigned int x, unsigned int y, const Pixel& color)
-{
-	buffer[INDEX2D(x, y)] = color;
-	pixelChanges.push_back(INDEX2D(x, y));
+void Renderer::Point(Buffer &buffer, unsigned int x, unsigned int y,
+                     const Color &color) {
+  buffer.Get(x, y) = color;
 }
 
 } // namespace Tenderer

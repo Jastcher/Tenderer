@@ -1,4 +1,4 @@
-/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles/Tenderer.dir
-/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles/Application.dir
-/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles/edit_cache.dir
-/home/jastcher/Programming/c++/Tenderer/Build/CMakeFiles/rebuild_cache.dir
+/home/jastcher/Programming/Tenderer/Build/CMakeFiles/Tenderer.dir
+/home/jastcher/Programming/Tenderer/Build/CMakeFiles/Application.dir
+/home/jastcher/Programming/Tenderer/Build/CMakeFiles/edit_cache.dir
+/home/jastcher/Programming/Tenderer/Build/CMakeFiles/rebuild_cache.dir

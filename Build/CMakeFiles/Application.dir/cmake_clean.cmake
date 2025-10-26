@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/jastcher/Programming/c++/Tenderer/bin/Application"
-  "/home/jastcher/Programming/c++/Tenderer/bin/Application.pdb"
+  "CMakeFiles/Application.dir/link.d"
+  "/home/jastcher/Programming/Tenderer/bin/Application"
+  "/home/jastcher/Programming/Tenderer/bin/Application.pdb"
   "CMakeFiles/Application.dir/Sandbox/app.cpp.o"
   "CMakeFiles/Application.dir/Sandbox/app.cpp.o.d"
 )

@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Application.cpp" "CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o" "gcc" "CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o.d"
-  "/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Buffer.cpp" "CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o" "gcc" "CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o.d"
-  "/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Renderer.cpp" "CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o" "gcc" "CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o.d"
-  "/home/jastcher/Programming/c++/Tenderer/Tenderer/src/Terminal.cpp" "CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o" "gcc" "CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o.d"
+  "/home/jastcher/Programming/Tenderer/Tenderer/src/Application.cpp" "CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o" "gcc" "CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o.d"
+  "/home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.cpp" "CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o" "gcc" "CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o.d"
+  "/home/jastcher/Programming/Tenderer/Tenderer/src/Renderer.cpp" "CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o" "gcc" "CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o.d"
+  "/home/jastcher/Programming/Tenderer/Tenderer/src/Terminal.cpp" "CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o" "gcc" "CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
