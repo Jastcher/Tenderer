@@ -174,6 +174,17 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/termios-baud.h \
+  /usr/include/bits/termios-c_cc.h \
+  /usr/include/bits/termios-c_cflag.h \
+  /usr/include/bits/termios-c_iflag.h \
+  /usr/include/bits/termios-c_lflag.h \
+  /usr/include/bits/termios-c_oflag.h \
+  /usr/include/bits/termios-cbaud.h \
+  /usr/include/bits/termios-misc.h \
+  /usr/include/bits/termios-struct.h \
+  /usr/include/bits/termios-tcflow.h \
+  /usr/include/bits/termios.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
@@ -240,22 +251,23 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o: /home/jastcher/Programmi
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
   /usr/include/tbb/tbb.h \
+  /usr/include/termios.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
-  /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h \
-  /usr/lib/clang/20/include/__stddef_header_macro.h \
-  /usr/lib/clang/20/include/__stddef_max_align_t.h \
-  /usr/lib/clang/20/include/__stddef_null.h \
-  /usr/lib/clang/20/include/__stddef_nullptr_t.h \
-  /usr/lib/clang/20/include/__stddef_offsetof.h \
-  /usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /usr/lib/clang/20/include/__stddef_size_t.h \
-  /usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /usr/lib/clang/20/include/sanitizer/tsan_interface.h \
-  /usr/lib/clang/20/include/stdarg.h \
-  /usr/lib/clang/20/include/stddef.h
+  /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/21/include/__stddef_header_macro.h \
+  /usr/lib/clang/21/include/__stddef_max_align_t.h \
+  /usr/lib/clang/21/include/__stddef_null.h \
+  /usr/lib/clang/21/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/21/include/__stddef_offsetof.h \
+  /usr/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/21/include/__stddef_size_t.h \
+  /usr/lib/clang/21/include/__stddef_wchar_t.h \
+  /usr/lib/clang/21/include/sanitizer/tsan_interface.h \
+  /usr/lib/clang/21/include/stdarg.h \
+  /usr/lib/clang/21/include/stddef.h
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o: /home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.cpp \
   /home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.h \
@@ -457,18 +469,18 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o: /home/jastcher/Programming/Te
   /usr/include/tbb/tbb.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
-  /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h \
-  /usr/lib/clang/20/include/__stddef_header_macro.h \
-  /usr/lib/clang/20/include/__stddef_max_align_t.h \
-  /usr/lib/clang/20/include/__stddef_null.h \
-  /usr/lib/clang/20/include/__stddef_nullptr_t.h \
-  /usr/lib/clang/20/include/__stddef_offsetof.h \
-  /usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /usr/lib/clang/20/include/__stddef_size_t.h \
-  /usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /usr/lib/clang/20/include/sanitizer/tsan_interface.h \
-  /usr/lib/clang/20/include/stdarg.h \
-  /usr/lib/clang/20/include/stddef.h
+  /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/21/include/__stddef_header_macro.h \
+  /usr/lib/clang/21/include/__stddef_max_align_t.h \
+  /usr/lib/clang/21/include/__stddef_null.h \
+  /usr/lib/clang/21/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/21/include/__stddef_offsetof.h \
+  /usr/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/21/include/__stddef_size_t.h \
+  /usr/lib/clang/21/include/__stddef_wchar_t.h \
+  /usr/lib/clang/21/include/sanitizer/tsan_interface.h \
+  /usr/lib/clang/21/include/stdarg.h \
+  /usr/lib/clang/21/include/stddef.h
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o: /home/jastcher/Programming/Tenderer/Tenderer/src/Renderer.cpp \
   /home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.h \
@@ -672,6 +684,17 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o: /home/jastcher/Programming/
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/termios-baud.h \
+  /usr/include/bits/termios-c_cc.h \
+  /usr/include/bits/termios-c_cflag.h \
+  /usr/include/bits/termios-c_iflag.h \
+  /usr/include/bits/termios-c_lflag.h \
+  /usr/include/bits/termios-c_oflag.h \
+  /usr/include/bits/termios-cbaud.h \
+  /usr/include/bits/termios-misc.h \
+  /usr/include/bits/termios-struct.h \
+  /usr/include/bits/termios-tcflow.h \
+  /usr/include/bits/termios.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
@@ -741,22 +764,23 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o: /home/jastcher/Programming/
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
   /usr/include/tbb/tbb.h \
+  /usr/include/termios.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
-  /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h \
-  /usr/lib/clang/20/include/__stddef_header_macro.h \
-  /usr/lib/clang/20/include/__stddef_max_align_t.h \
-  /usr/lib/clang/20/include/__stddef_null.h \
-  /usr/lib/clang/20/include/__stddef_nullptr_t.h \
-  /usr/lib/clang/20/include/__stddef_offsetof.h \
-  /usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /usr/lib/clang/20/include/__stddef_size_t.h \
-  /usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /usr/lib/clang/20/include/sanitizer/tsan_interface.h \
-  /usr/lib/clang/20/include/stdarg.h \
-  /usr/lib/clang/20/include/stddef.h
+  /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/21/include/__stddef_header_macro.h \
+  /usr/lib/clang/21/include/__stddef_max_align_t.h \
+  /usr/lib/clang/21/include/__stddef_null.h \
+  /usr/lib/clang/21/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/21/include/__stddef_offsetof.h \
+  /usr/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/21/include/__stddef_size_t.h \
+  /usr/lib/clang/21/include/__stddef_wchar_t.h \
+  /usr/lib/clang/21/include/sanitizer/tsan_interface.h \
+  /usr/lib/clang/21/include/stdarg.h \
+  /usr/lib/clang/21/include/stddef.h
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/Tenderer/Tenderer/src/Terminal.cpp \
   /home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.h \
@@ -908,6 +932,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
   /usr/include/bits/endianness.h \
   /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
@@ -924,11 +950,24 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
   /usr/include/bits/sched.h \
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
+  /usr/include/bits/stat.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/struct_stat.h \
+  /usr/include/bits/termios-baud.h \
+  /usr/include/bits/termios-c_cc.h \
+  /usr/include/bits/termios-c_cflag.h \
+  /usr/include/bits/termios-c_iflag.h \
+  /usr/include/bits/termios-c_lflag.h \
+  /usr/include/bits/termios-c_oflag.h \
+  /usr/include/bits/termios-cbaud.h \
+  /usr/include/bits/termios-misc.h \
+  /usr/include/bits/termios-struct.h \
+  /usr/include/bits/termios-tcflow.h \
+  /usr/include/bits/termios.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
@@ -951,6 +990,7 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
   /usr/include/bits/types/sigset_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_iovec.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
   /usr/include/bits/types/struct_timespec.h \
@@ -970,12 +1010,14 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/linux/ioctl.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
@@ -995,23 +1037,34 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
   /usr/include/tbb/tbb.h \
+  /usr/include/termios.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
-  /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h \
-  /usr/lib/clang/20/include/__stddef_header_macro.h \
-  /usr/lib/clang/20/include/__stddef_max_align_t.h \
-  /usr/lib/clang/20/include/__stddef_null.h \
-  /usr/lib/clang/20/include/__stddef_nullptr_t.h \
-  /usr/lib/clang/20/include/__stddef_offsetof.h \
-  /usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /usr/lib/clang/20/include/__stddef_size_t.h \
-  /usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /usr/lib/clang/20/include/sanitizer/tsan_interface.h \
-  /usr/lib/clang/20/include/stdarg.h \
-  /usr/lib/clang/20/include/stddef.h
+  /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/21/include/__stddef_header_macro.h \
+  /usr/lib/clang/21/include/__stddef_max_align_t.h \
+  /usr/lib/clang/21/include/__stddef_null.h \
+  /usr/lib/clang/21/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/21/include/__stddef_offsetof.h \
+  /usr/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/21/include/__stddef_size_t.h \
+  /usr/lib/clang/21/include/__stddef_wchar_t.h \
+  /usr/lib/clang/21/include/sanitizer/tsan_interface.h \
+  /usr/lib/clang/21/include/stdarg.h \
+  /usr/lib/clang/21/include/stddef.h
 
+
+/usr/include/fcntl.h:
+
+/usr/include/bits/types/struct_iovec.h:
+
+/usr/include/bits/struct_stat.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/bits/fcntl.h:
 
 /home/jastcher/Programming/Tenderer/Tenderer/src/Terminal.cpp:
 
@@ -1059,7 +1112,23 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h:
 
+/home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.cpp:
+
 /usr/include/c++/15.2.1/bits/algorithmfwd.h:
+
+/usr/lib/clang/21/include/stddef.h:
+
+/usr/lib/clang/21/include/stdarg.h:
+
+/usr/lib/clang/21/include/__stddef_wchar_t.h:
+
+/usr/lib/clang/21/include/__stddef_ptrdiff_t.h:
+
+/usr/lib/clang/21/include/__stddef_nullptr_t.h:
+
+/usr/lib/clang/21/include/__stddef_null.h:
+
+/usr/lib/clang/21/include/__stddef_max_align_t.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
@@ -1069,11 +1138,11 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
+/usr/include/bits/stdlib-float.h:
+
 /usr/include/bits/time64.h:
 
 /usr/include/bits/types/time_t.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/bits/endianness.h:
 
@@ -1117,11 +1186,9 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/15.2.1/bits/allocated_ptr.h:
 
-/usr/include/bits/thread-shared-types.h:
+/usr/include/math.h:
 
-/usr/include/c++/15.2.1/ios:
-
-/usr/include/c++/15.2.1/bits/stl_function.h:
+/usr/include/c++/15.2.1/bits/invoke.h:
 
 /usr/include/c++/15.2.1/pstl/glue_memory_defs.h:
 
@@ -1137,6 +1204,12 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /home/jastcher/Programming/Tenderer/Tenderer/src/Application.h:
 
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/15.2.1/ios:
+
+/usr/lib/clang/21/include/__stddef_header_macro.h:
+
 /usr/include/c++/15.2.1/bits/uniform_int_dist.h:
 
 /usr/include/c++/15.2.1/cwchar:
@@ -1145,15 +1218,11 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/types/wint_t.h:
 
-/usr/include/math.h:
-
-/usr/include/c++/15.2.1/bits/invoke.h:
-
-/usr/lib/clang/20/include/sanitizer/tsan_interface.h:
-
 /usr/include/c++/15.2.1/cstdlib:
 
 /usr/include/c++/15.2.1/cstdio:
+
+/usr/include/bits/fcntl-linux.h:
 
 /usr/include/c++/15.2.1/bits/sstream.tcc:
 
@@ -1193,6 +1262,10 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/15.2.1/bits/hash_bytes.h:
 
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/bits/termios.h:
+
 /usr/include/c++/15.2.1/bits/stl_pair.h:
 
 /usr/include/bits/waitflags.h:
@@ -1202,8 +1275,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/15.2.1/bits/ios_base.h:
 
 /usr/include/c++/15.2.1/bits/functional_hash.h:
 
@@ -1241,9 +1312,15 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/15.2.1/bits/allocator.h:
 
+/usr/include/bits/termios-c_iflag.h:
+
 /usr/include/c++/15.2.1/bits/version.h:
 
 /usr/include/c++/15.2.1/bits/concept_check.h:
+
+/usr/include/c++/15.2.1/algorithm:
+
+/home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.h:
 
 /usr/include/c++/15.2.1/typeinfo:
 
@@ -1252,6 +1329,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/bits/mathcalls.h:
 
 /usr/include/c++/15.2.1/iostream:
+
+/usr/include/bits/termios-misc.h:
 
 /usr/include/c++/15.2.1/ostream:
 
@@ -1289,6 +1368,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/15.2.1/bits/atomic_base.h:
 
+/usr/include/bits/termios-c_oflag.h:
+
 /usr/include/asm/sockios.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
@@ -1296,6 +1377,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/c++/15.2.1/ext/type_traits.h:
 
 /usr/include/asm-generic/posix_types.h:
+
+/usr/lib/clang/21/include/__stddef_offsetof.h:
 
 /usr/include/c++/15.2.1/bits/stl_tempbuf.h:
 
@@ -1320,6 +1403,10 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/bits/fp-logb.h:
 
 /usr/include/linux/ioctl.h:
+
+/usr/include/c++/15.2.1/bits/memory_resource.h:
+
+/usr/include/time.h:
 
 /usr/include/c++/15.2.1/pstl/pstl_config.h:
 
@@ -1353,6 +1440,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h:
 
+/usr/include/bits/termios-tcflow.h:
+
 /usr/include/linux/types.h:
 
 /usr/include/c++/15.2.1/bits/std_abs.h:
@@ -1375,8 +1464,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/asm-generic/int-ll64.h:
 
-/usr/lib/clang/20/include/__stddef_max_align_t.h:
-
 /usr/include/asm-generic/ioctls.h:
 
 /usr/include/asm-generic/sockios.h:
@@ -1398,6 +1485,10 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/asm/types.h:
 
 /usr/include/bits/byteswap.h:
+
+/usr/include/linux/sockios.h:
+
+/usr/include/bits/confname.h:
 
 /usr/include/bits/errno.h:
 
@@ -1432,6 +1523,10 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/bits/types/clock_t.h:
 
 /usr/include/bits/locale.h:
+
+/usr/lib/clang/21/include/__stddef_size_t.h:
+
+/usr/include/bits/long-double.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
@@ -1469,6 +1564,24 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/types/struct_itimerspec.h:
 
+/usr/include/c++/15.2.1/bits/ios_base.h:
+
+/usr/include/bits/termios-c_cc.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/c++/15.2.1/bits/stl_function.h:
+
+/usr/include/bits/termios-c_cflag.h:
+
+/usr/include/bits/termios-c_lflag.h:
+
+/usr/include/bits/termios-struct.h:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/bits/termios-cbaud.h:
+
 /usr/include/bits/timesize.h:
 
 /usr/include/c++/15.2.1/bits/move.h:
@@ -1479,6 +1592,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/sched.h:
 
+/usr/include/bits/termios-baud.h:
+
 /usr/include/bits/types/__FILE.h:
 
 /usr/include/bits/types/__fpos64_t.h:
@@ -1487,23 +1602,9 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/types/__sigset_t.h:
 
-/usr/include/time.h:
-
-/usr/lib/clang/20/include/__stddef_ptrdiff_t.h:
-
 /usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/include/c++/15.2.1/bits/memory_resource.h:
-
-/usr/lib/clang/20/include/__stdarg___gnuc_va_list.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/lib/clang/20/include/__stddef_header_macro.h:
-
 /usr/include/bits/types/locale_t.h:
-
-/usr/include/bits/types/mbstate_t.h:
 
 /usr/include/bits/environments.h:
 
@@ -1521,8 +1622,6 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/bits/types/struct_timespec.h:
 
-/usr/lib/clang/20/include/stdarg.h:
-
 /usr/include/c++/15.2.1/iosfwd:
 
 /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h:
@@ -1538,6 +1637,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 /usr/include/c++/15.2.1/bits/string_view.tcc:
 
 /usr/include/bits/typesizes.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/c++/15.2.1/ext/alloc_traits.h:
 
@@ -1557,7 +1658,7 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/linux/posix_types.h:
 
-/usr/include/linux/sched/types.h:
+/usr/lib/clang/21/include/sanitizer/tsan_interface.h:
 
 /usr/include/linux/stddef.h:
 
@@ -1581,28 +1682,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o: /home/jastcher/Programming/
 
 /usr/include/tbb/tbb.h:
 
+/usr/include/termios.h:
+
 /usr/include/unistd.h:
 
-/usr/include/bits/stdlib-float.h:
-
-/usr/lib/clang/20/include/__stddef_null.h:
-
-/usr/include/linux/sockios.h:
-
-/usr/include/bits/confname.h:
-
-/usr/lib/clang/20/include/__stddef_wchar_t.h:
-
-/usr/lib/clang/20/include/__stddef_nullptr_t.h:
-
-/usr/lib/clang/20/include/__stddef_offsetof.h:
-
-/usr/lib/clang/20/include/__stddef_size_t.h:
-
-/usr/lib/clang/20/include/stddef.h:
-
-/home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.cpp:
-
-/home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.h:
-
-/usr/include/c++/15.2.1/algorithm:
+/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h:

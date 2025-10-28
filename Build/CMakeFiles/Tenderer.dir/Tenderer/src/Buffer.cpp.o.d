@@ -11,15 +11,15 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o: \
   /usr/include/gnu/stubs-64.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/pstl_config.h \
-  /usr/include/tbb/tbb.h /usr/lib/clang/20/include/stddef.h \
-  /usr/lib/clang/20/include/__stddef_header_macro.h \
-  /usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /usr/lib/clang/20/include/__stddef_size_t.h \
-  /usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /usr/lib/clang/20/include/__stddef_null.h \
-  /usr/lib/clang/20/include/__stddef_nullptr_t.h \
-  /usr/lib/clang/20/include/__stddef_max_align_t.h \
-  /usr/lib/clang/20/include/__stddef_offsetof.h \
+  /usr/include/tbb/tbb.h /usr/lib/clang/21/include/stddef.h \
+  /usr/lib/clang/21/include/__stddef_header_macro.h \
+  /usr/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/21/include/__stddef_size_t.h \
+  /usr/lib/clang/21/include/__stddef_wchar_t.h \
+  /usr/lib/clang/21/include/__stddef_null.h \
+  /usr/lib/clang/21/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/21/include/__stddef_max_align_t.h \
+  /usr/lib/clang/21/include/__stddef_offsetof.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/version.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/memory \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/memoryfwd.h \
@@ -71,8 +71,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cwchar \
   /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
   /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
-  /usr/lib/clang/20/include/stdarg.h \
-  /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/21/include/stdarg.h \
+  /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
   /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
   /usr/include/bits/types/mbstate_t.h \
   /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
@@ -123,7 +123,7 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/shared_ptr_atomic.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/atomic_base.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/atomic_lockfree_defines.h \
-  /usr/lib/clang/20/include/sanitizer/tsan_interface.h \
+  /usr/lib/clang/21/include/sanitizer/tsan_interface.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward/auto_ptr.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/glue_memory_defs.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/execution_defs.h \

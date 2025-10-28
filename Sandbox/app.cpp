@@ -30,8 +30,11 @@ int main() {
     prevTime = crntTime;
 
     app.SetTitle(std::to_string(fps));
-    std::cout << fps;
 
+    if (app.PollKey() == 'q')
+      break;
+
+    usleep(16000);
     for (uint y = 0; y < app.Height(); y++) {
       for (uint x = 0; x < app.Width(); x++) {
         app.Point(x, y,
@@ -45,5 +48,6 @@ int main() {
     // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     it++;
   }
+  std::cout << app.Height() << " ; " << app.Width() << std::endl;
   return 0;
 }

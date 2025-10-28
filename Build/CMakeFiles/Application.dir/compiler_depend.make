@@ -229,6 +229,17 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: /home/jastcher/Programming/Tendere
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/termios-baud.h \
+  /usr/include/bits/termios-c_cc.h \
+  /usr/include/bits/termios-c_cflag.h \
+  /usr/include/bits/termios-c_iflag.h \
+  /usr/include/bits/termios-c_lflag.h \
+  /usr/include/bits/termios-c_oflag.h \
+  /usr/include/bits/termios-cbaud.h \
+  /usr/include/bits/termios-misc.h \
+  /usr/include/bits/termios-struct.h \
+  /usr/include/bits/termios-tcflow.h \
+  /usr/include/bits/termios.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
@@ -297,43 +308,50 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: /home/jastcher/Programming/Tendere
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
   /usr/include/tbb/tbb.h \
+  /usr/include/termios.h \
   /usr/include/threads.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
-  /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h \
-  /usr/lib/clang/20/include/__stddef_header_macro.h \
-  /usr/lib/clang/20/include/__stddef_max_align_t.h \
-  /usr/lib/clang/20/include/__stddef_null.h \
-  /usr/lib/clang/20/include/__stddef_nullptr_t.h \
-  /usr/lib/clang/20/include/__stddef_offsetof.h \
-  /usr/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /usr/lib/clang/20/include/__stddef_size_t.h \
-  /usr/lib/clang/20/include/__stddef_wchar_t.h \
-  /usr/lib/clang/20/include/sanitizer/tsan_interface.h \
-  /usr/lib/clang/20/include/stdarg.h \
-  /usr/lib/clang/20/include/stddef.h \
-  /usr/lib/clang/20/include/stdint.h
+  /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/21/include/__stddef_header_macro.h \
+  /usr/lib/clang/21/include/__stddef_max_align_t.h \
+  /usr/lib/clang/21/include/__stddef_null.h \
+  /usr/lib/clang/21/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/21/include/__stddef_offsetof.h \
+  /usr/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/21/include/__stddef_size_t.h \
+  /usr/lib/clang/21/include/__stddef_wchar_t.h \
+  /usr/lib/clang/21/include/sanitizer/tsan_interface.h \
+  /usr/lib/clang/21/include/stdarg.h \
+  /usr/lib/clang/21/include/stddef.h \
+  /usr/lib/clang/21/include/stdint.h
 
 
-/usr/lib/clang/20/include/stddef.h:
+/usr/lib/clang/21/include/stddef.h:
 
-/usr/lib/clang/20/include/stdarg.h:
+/usr/lib/clang/21/include/stdarg.h:
 
-/usr/lib/clang/20/include/__stddef_size_t.h:
+/usr/lib/clang/21/include/__stddef_wchar_t.h:
 
-/usr/lib/clang/20/include/__stddef_offsetof.h:
+/usr/lib/clang/21/include/__stddef_ptrdiff_t.h:
 
-/usr/lib/clang/20/include/__stddef_max_align_t.h:
+/usr/lib/clang/21/include/__stddef_nullptr_t.h:
+
+/usr/lib/clang/21/include/__stddef_null.h:
+
+/usr/lib/clang/21/include/__stddef_max_align_t.h:
+
+/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h:
 
 /usr/include/wchar.h:
 
 /usr/include/unistd.h:
 
-/usr/lib/clang/20/include/__stddef_ptrdiff_t.h:
-
 /usr/include/time.h:
+
+/usr/include/termios.h:
 
 /usr/include/tbb/tbb.h:
 
@@ -348,6 +366,8 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: /home/jastcher/Programming/Tendere
 /usr/include/sys/cdefs.h:
 
 /usr/include/stdlib.h:
+
+/usr/lib/clang/21/include/sanitizer/tsan_interface.h:
 
 /usr/include/linux/stddef.h:
 
@@ -369,9 +389,21 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: /home/jastcher/Programming/Tendere
 
 /usr/include/bits/uintn-identity.h:
 
-/usr/include/c++/15.2.1/bits/stl_function.h:
+/usr/include/bits/types/wint_t.h:
 
-/usr/lib/clang/20/include/sanitizer/tsan_interface.h:
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/bits/types/sigset_t.h:
 
 /usr/include/math.h:
 
@@ -380,6 +412,10 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: /home/jastcher/Programming/Tendere
 /usr/include/c++/15.2.1/pstl/glue_memory_defs.h:
 
 /usr/include/bits/endian.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/15.2.1/ext/atomicity.h:
 
 libTenderer.a:
 
@@ -394,8 +430,6 @@ libTenderer.a:
 /usr/include/c++/15.2.1/cwchar:
 
 /usr/include/c++/15.2.1/bits/memoryfwd.h:
-
-/usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/15.2.1/ext/aligned_buffer.h:
 
@@ -437,6 +471,8 @@ libTenderer.a:
 
 /usr/include/c++/15.2.1/cstdint:
 
+/usr/lib/clang/21/include/__stddef_offsetof.h:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/15.2.1/bits/stl_tempbuf.h:
@@ -448,8 +484,6 @@ libTenderer.a:
 /usr/include/c++/15.2.1/chrono:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/15.2.1/bits/ios_base.h:
 
 /usr/include/stdint.h:
 
@@ -463,11 +497,17 @@ libTenderer.a:
 
 /usr/include/c++/15.2.1/ext/string_conversions.h:
 
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/c++/15.2.1/bits/predefined_ops.h:
+
 /usr/include/c++/15.2.1/bits/locale_facets.h:
 
 /usr/include/linux/types.h:
 
 /usr/include/c++/15.2.1/bits/std_abs.h:
+
+/usr/include/bits/termios-misc.h:
 
 /usr/include/c++/15.2.1/cwctype:
 
@@ -497,6 +537,8 @@ libTenderer.a:
 
 /usr/include/c++/15.2.1/type_traits:
 
+/usr/lib/clang/21/include/__stddef_header_macro.h:
+
 /usr/include/c++/15.2.1/ios:
 
 /usr/include/bits/thread-shared-types.h:
@@ -515,7 +557,15 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
+/usr/include/bits/termios-tcflow.h:
+
 /usr/include/c++/15.2.1/bits/requires_hosted.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/15.2.1/iosfwd:
+
+/usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h:
 
 /usr/include/bits/types/error_t.h:
 
@@ -562,6 +612,8 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 /home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.h:
 
 /usr/include/c++/15.2.1/bits/allocator.h:
+
+/usr/include/bits/termios-c_iflag.h:
 
 /usr/include/c++/15.2.1/bits/refwrap.h:
 
@@ -629,8 +681,6 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/c++/15.2.1/bits/atomic_base.h:
 
-/usr/include/asm/sockios.h:
-
 /usr/lib64/Scrt1.o:
 
 /usr/include/bits/select.h:
@@ -641,6 +691,12 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/c++/15.2.1/bits/stl_iterator.h:
 
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/15.2.1/bits/std_thread.h:
+
+/usr/include/bits/environments.h:
+
 /usr/include/c++/15.2.1/bits/uses_allocator_args.h:
 
 /usr/include/c++/15.2.1/bits/basic_string.h:
@@ -650,8 +706,6 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 /usr/include/c++/15.2.1/bit:
 
 /usr/include/c++/15.2.1/bits/basic_string.tcc:
-
-/usr/lib/clang/20/include/__stdarg___gnuc_va_list.h:
 
 /usr/include/c++/15.2.1/bits/memory_resource.h:
 
@@ -691,6 +745,10 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/c++/15.2.1/tr1/legendre_function.tcc:
 
+/usr/include/asm/sockios.h:
+
+/usr/include/bits/termios-c_oflag.h:
+
 /usr/include/c++/15.2.1/ostream:
 
 /usr/include/bits/libc-header-start.h:
@@ -717,6 +775,10 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/c++/15.2.1/tr1/ell_integral.tcc:
 
+/usr/lib/clang/21/include/stdint.h:
+
+/usr/include/bits/termios.h:
+
 /usr/include/c++/15.2.1/bits/parse_numbers.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
@@ -726,6 +788,10 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 /usr/include/c++/15.2.1/tr1/gamma.tcc:
 
 /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/c++/15.2.1/tr1/poly_hermite.tcc:
 
 /usr/include/c++/15.2.1/tr1/special_function_util.h:
 
@@ -739,13 +805,9 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
-/usr/include/bits/types/time_t.h:
-
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
-
-/usr/lib/clang/20/include/__stddef_null.h:
 
 /usr/include/bits/stdlib-float.h:
 
@@ -777,8 +839,6 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/asm-generic/sockios.h:
 
-/usr/include/bits/types/sigset_t.h:
-
 /usr/include/bits/stdint-uintn.h:
 
 /usr/include/c++/15.2.1/system_error:
@@ -792,10 +852,6 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 /usr/include/asm/posix_types_64.h:
 
 /usr/include/asm/types.h:
-
-/usr/lib/clang/20/include/__stddef_wchar_t.h:
-
-/usr/lib/clang/20/include/__stddef_nullptr_t.h:
 
 /usr/include/linux/sockios.h:
 
@@ -827,6 +883,8 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/bits/fp-fast.h:
 
+/usr/include/bits/termios-cbaud.h:
+
 /usr/include/c++/15.2.1/ext/numeric_traits.h:
 
 /usr/include/bits/getopt_core.h:
@@ -853,7 +911,7 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/bits/locale.h:
 
-/usr/lib/clang/20/include/__stddef_header_macro.h:
+/usr/lib/clang/21/include/__stddef_size_t.h:
 
 /usr/include/bits/long-double.h:
 
@@ -885,9 +943,19 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/bits/struct_rwlock.h:
 
-/usr/include/c++/15.2.1/bits/predefined_ops.h:
+/usr/include/c++/15.2.1/bits/ios_base.h:
 
-/usr/include/bits/types/struct_itimerspec.h:
+/usr/include/bits/termios-c_cc.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/c++/15.2.1/bits/stl_function.h:
+
+/usr/include/bits/termios-c_cflag.h:
+
+/usr/include/bits/termios-c_lflag.h:
+
+/usr/include/bits/termios-struct.h:
 
 /usr/include/bits/timesize.h:
 
@@ -895,11 +963,11 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 
 /usr/include/bits/types.h:
 
-/usr/lib/clang/20/include/stdint.h:
-
 /usr/include/features.h:
 
 /usr/include/bits/sched.h:
+
+/usr/include/bits/termios-baud.h:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -910,35 +978,3 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o:
 /usr/include/bits/types/__sigset_t.h:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/c++/15.2.1/bits/std_thread.h:
-
-/usr/include/bits/environments.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/c++/15.2.1/ext/atomicity.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/c++/15.2.1/iosfwd:
-
-/usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/c++/15.2.1/tr1/poly_hermite.tcc:
-
-/usr/include/bits/types/timer_t.h:

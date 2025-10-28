@@ -22,6 +22,7 @@ public:
   void Point(uint x, uint y, const Color &color);
 
   void SetTitle(const std::string &title);
+  char PollKey();
 
 private:
   std::shared_ptr<Terminal> p_Terminal;

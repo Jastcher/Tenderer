@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstring>
 #include <iostream>
+#include <ostream>
 #include <sstream>
 #include <vector>
 
@@ -39,8 +40,7 @@ void Renderer::RenderScreen(Buffer &buffer, Buffer &compBuffer) {
     terminal->GetColor(ss, buffer[i]);
   }
 
-  std::cout << ss.str() << std::flush;
-
+  write(STDOUT_FILENO, ss.str().c_str(), ss.str().size());
   compBuffer = buffer;
 }
 void Renderer::Point(Buffer &buffer, unsigned int x, unsigned int y,

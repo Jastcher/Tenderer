@@ -175,6 +175,17 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
+ /usr/include/bits/termios-baud.h
+ /usr/include/bits/termios-c_cc.h
+ /usr/include/bits/termios-c_cflag.h
+ /usr/include/bits/termios-c_iflag.h
+ /usr/include/bits/termios-c_lflag.h
+ /usr/include/bits/termios-c_oflag.h
+ /usr/include/bits/termios-cbaud.h
+ /usr/include/bits/termios-misc.h
+ /usr/include/bits/termios-struct.h
+ /usr/include/bits/termios-tcflow.h
+ /usr/include/bits/termios.h
  /usr/include/bits/thread-shared-types.h
  /usr/include/bits/time.h
  /usr/include/bits/time64.h
@@ -241,22 +252,23 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Application.cpp.o
  /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
  /usr/include/tbb/tbb.h
+ /usr/include/termios.h
  /usr/include/time.h
  /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
- /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h
- /usr/lib/clang/20/include/__stddef_header_macro.h
- /usr/lib/clang/20/include/__stddef_max_align_t.h
- /usr/lib/clang/20/include/__stddef_null.h
- /usr/lib/clang/20/include/__stddef_nullptr_t.h
- /usr/lib/clang/20/include/__stddef_offsetof.h
- /usr/lib/clang/20/include/__stddef_ptrdiff_t.h
- /usr/lib/clang/20/include/__stddef_size_t.h
- /usr/lib/clang/20/include/__stddef_wchar_t.h
- /usr/lib/clang/20/include/sanitizer/tsan_interface.h
- /usr/lib/clang/20/include/stdarg.h
- /usr/lib/clang/20/include/stddef.h
+ /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h
+ /usr/lib/clang/21/include/__stddef_header_macro.h
+ /usr/lib/clang/21/include/__stddef_max_align_t.h
+ /usr/lib/clang/21/include/__stddef_null.h
+ /usr/lib/clang/21/include/__stddef_nullptr_t.h
+ /usr/lib/clang/21/include/__stddef_offsetof.h
+ /usr/lib/clang/21/include/__stddef_ptrdiff_t.h
+ /usr/lib/clang/21/include/__stddef_size_t.h
+ /usr/lib/clang/21/include/__stddef_wchar_t.h
+ /usr/lib/clang/21/include/sanitizer/tsan_interface.h
+ /usr/lib/clang/21/include/stdarg.h
+ /usr/lib/clang/21/include/stddef.h
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o
  /home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.cpp
@@ -459,18 +471,18 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.o
  /usr/include/tbb/tbb.h
  /usr/include/time.h
  /usr/include/wchar.h
- /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h
- /usr/lib/clang/20/include/__stddef_header_macro.h
- /usr/lib/clang/20/include/__stddef_max_align_t.h
- /usr/lib/clang/20/include/__stddef_null.h
- /usr/lib/clang/20/include/__stddef_nullptr_t.h
- /usr/lib/clang/20/include/__stddef_offsetof.h
- /usr/lib/clang/20/include/__stddef_ptrdiff_t.h
- /usr/lib/clang/20/include/__stddef_size_t.h
- /usr/lib/clang/20/include/__stddef_wchar_t.h
- /usr/lib/clang/20/include/sanitizer/tsan_interface.h
- /usr/lib/clang/20/include/stdarg.h
- /usr/lib/clang/20/include/stddef.h
+ /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h
+ /usr/lib/clang/21/include/__stddef_header_macro.h
+ /usr/lib/clang/21/include/__stddef_max_align_t.h
+ /usr/lib/clang/21/include/__stddef_null.h
+ /usr/lib/clang/21/include/__stddef_nullptr_t.h
+ /usr/lib/clang/21/include/__stddef_offsetof.h
+ /usr/lib/clang/21/include/__stddef_ptrdiff_t.h
+ /usr/lib/clang/21/include/__stddef_size_t.h
+ /usr/lib/clang/21/include/__stddef_wchar_t.h
+ /usr/lib/clang/21/include/sanitizer/tsan_interface.h
+ /usr/lib/clang/21/include/stdarg.h
+ /usr/lib/clang/21/include/stddef.h
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o
  /home/jastcher/Programming/Tenderer/Tenderer/src/Renderer.cpp
@@ -675,6 +687,17 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
+ /usr/include/bits/termios-baud.h
+ /usr/include/bits/termios-c_cc.h
+ /usr/include/bits/termios-c_cflag.h
+ /usr/include/bits/termios-c_iflag.h
+ /usr/include/bits/termios-c_lflag.h
+ /usr/include/bits/termios-c_oflag.h
+ /usr/include/bits/termios-cbaud.h
+ /usr/include/bits/termios-misc.h
+ /usr/include/bits/termios-struct.h
+ /usr/include/bits/termios-tcflow.h
+ /usr/include/bits/termios.h
  /usr/include/bits/thread-shared-types.h
  /usr/include/bits/time.h
  /usr/include/bits/time64.h
@@ -744,22 +767,23 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o
  /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
  /usr/include/tbb/tbb.h
+ /usr/include/termios.h
  /usr/include/time.h
  /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
- /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h
- /usr/lib/clang/20/include/__stddef_header_macro.h
- /usr/lib/clang/20/include/__stddef_max_align_t.h
- /usr/lib/clang/20/include/__stddef_null.h
- /usr/lib/clang/20/include/__stddef_nullptr_t.h
- /usr/lib/clang/20/include/__stddef_offsetof.h
- /usr/lib/clang/20/include/__stddef_ptrdiff_t.h
- /usr/lib/clang/20/include/__stddef_size_t.h
- /usr/lib/clang/20/include/__stddef_wchar_t.h
- /usr/lib/clang/20/include/sanitizer/tsan_interface.h
- /usr/lib/clang/20/include/stdarg.h
- /usr/lib/clang/20/include/stddef.h
+ /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h
+ /usr/lib/clang/21/include/__stddef_header_macro.h
+ /usr/lib/clang/21/include/__stddef_max_align_t.h
+ /usr/lib/clang/21/include/__stddef_null.h
+ /usr/lib/clang/21/include/__stddef_nullptr_t.h
+ /usr/lib/clang/21/include/__stddef_offsetof.h
+ /usr/lib/clang/21/include/__stddef_ptrdiff_t.h
+ /usr/lib/clang/21/include/__stddef_size_t.h
+ /usr/lib/clang/21/include/__stddef_wchar_t.h
+ /usr/lib/clang/21/include/sanitizer/tsan_interface.h
+ /usr/lib/clang/21/include/stdarg.h
+ /usr/lib/clang/21/include/stddef.h
 
 CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o
  /home/jastcher/Programming/Tenderer/Tenderer/src/Terminal.cpp
@@ -912,6 +936,8 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o
  /usr/include/bits/endianness.h
  /usr/include/bits/environments.h
  /usr/include/bits/errno.h
+ /usr/include/bits/fcntl-linux.h
+ /usr/include/bits/fcntl.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
  /usr/include/bits/getopt_core.h
@@ -928,11 +954,24 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o
  /usr/include/bits/sched.h
  /usr/include/bits/select.h
  /usr/include/bits/setjmp.h
+ /usr/include/bits/stat.h
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdio_lim.h
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
+ /usr/include/bits/struct_stat.h
+ /usr/include/bits/termios-baud.h
+ /usr/include/bits/termios-c_cc.h
+ /usr/include/bits/termios-c_cflag.h
+ /usr/include/bits/termios-c_iflag.h
+ /usr/include/bits/termios-c_lflag.h
+ /usr/include/bits/termios-c_oflag.h
+ /usr/include/bits/termios-cbaud.h
+ /usr/include/bits/termios-misc.h
+ /usr/include/bits/termios-struct.h
+ /usr/include/bits/termios-tcflow.h
+ /usr/include/bits/termios.h
  /usr/include/bits/thread-shared-types.h
  /usr/include/bits/time.h
  /usr/include/bits/time64.h
@@ -955,6 +994,7 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o
  /usr/include/bits/types/sigset_t.h
  /usr/include/bits/types/struct_FILE.h
  /usr/include/bits/types/struct___jmp_buf_tag.h
+ /usr/include/bits/types/struct_iovec.h
  /usr/include/bits/types/struct_itimerspec.h
  /usr/include/bits/types/struct_sched_param.h
  /usr/include/bits/types/struct_timespec.h
@@ -974,12 +1014,14 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h
+ /usr/include/fcntl.h
  /usr/include/features-time64.h
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
+ /usr/include/linux/falloc.h
  /usr/include/linux/ioctl.h
  /usr/include/linux/posix_types.h
  /usr/include/linux/sched/types.h
@@ -999,20 +1041,21 @@ CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.o
  /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
  /usr/include/tbb/tbb.h
+ /usr/include/termios.h
  /usr/include/time.h
  /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
- /usr/lib/clang/20/include/__stdarg___gnuc_va_list.h
- /usr/lib/clang/20/include/__stddef_header_macro.h
- /usr/lib/clang/20/include/__stddef_max_align_t.h
- /usr/lib/clang/20/include/__stddef_null.h
- /usr/lib/clang/20/include/__stddef_nullptr_t.h
- /usr/lib/clang/20/include/__stddef_offsetof.h
- /usr/lib/clang/20/include/__stddef_ptrdiff_t.h
- /usr/lib/clang/20/include/__stddef_size_t.h
- /usr/lib/clang/20/include/__stddef_wchar_t.h
- /usr/lib/clang/20/include/sanitizer/tsan_interface.h
- /usr/lib/clang/20/include/stdarg.h
- /usr/lib/clang/20/include/stddef.h
+ /usr/lib/clang/21/include/__stdarg___gnuc_va_list.h
+ /usr/lib/clang/21/include/__stddef_header_macro.h
+ /usr/lib/clang/21/include/__stddef_max_align_t.h
+ /usr/lib/clang/21/include/__stddef_null.h
+ /usr/lib/clang/21/include/__stddef_nullptr_t.h
+ /usr/lib/clang/21/include/__stddef_offsetof.h
+ /usr/lib/clang/21/include/__stddef_ptrdiff_t.h
+ /usr/lib/clang/21/include/__stddef_size_t.h
+ /usr/lib/clang/21/include/__stddef_wchar_t.h
+ /usr/lib/clang/21/include/sanitizer/tsan_interface.h
+ /usr/lib/clang/21/include/stdarg.h
+ /usr/lib/clang/21/include/stddef.h
 
