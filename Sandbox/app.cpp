@@ -34,20 +34,20 @@ int main() {
     if (app.PollKey() == 'q')
       break;
 
-    usleep(16000);
     for (uint y = 0; y < app.Height(); y++) {
       for (uint x = 0; x < app.Width(); x++) {
         app.Point(x, y,
                   {static_cast<unsigned char>(x / (float)app.Width() * 255.0f),
                    static_cast<unsigned char>(y / (float)app.Height() * 255.0f),
-                   static_cast<unsigned char>(std::abs(std::sin(it / 30.0f)) *
+                   static_cast<unsigned char>(std::abs(std::sin(it / 100.0f)) *
                                               255.0f)});
       }
     }
     app.RenderScreen();
+
+    std::cout << fps;
     // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     it++;
   }
-  std::cout << app.Height() << " ; " << app.Width() << std::endl;
   return 0;
 }

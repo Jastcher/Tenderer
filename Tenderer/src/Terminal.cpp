@@ -2,13 +2,14 @@
 #include <fcntl.h> // for fcntl()
 #include <sstream>
 #include <termios.h>
+#include <unistd.h>
 
 namespace Tenderer {
 struct termios orig_termios;
 
 Terminal::Terminal() {
   struct winsize size;
-  ioctl(STDERR_FILENO, TIOCGWINSZ, &size);
+  ioctl(STDOUT_FILENO, TIOCGWINSZ, &size);
   props.width = size.ws_col;
   props.height = size.ws_row - 1;
 
@@ -48,8 +49,8 @@ void Terminal::EnableRawMode() {
 
   tcsetattr(STDIN_FILENO, TCSAFLUSH, &raw);
 
-  int flags = fcntl(STDIN_FILENO, F_GETFL, 0);
-  fcntl(STDIN_FILENO, F_SETFL, flags | O_NONBLOCK);
+  // int flags = fcntl(STDIN_FILENO, F_GETFL, 0);
+  //  fcntl(STDIN_FILENO, F_SETFL, flags | O_NONBLOCK);
 }
 
 } // namespace Tenderer

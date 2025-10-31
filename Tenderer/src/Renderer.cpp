@@ -28,19 +28,13 @@ void Renderer::RenderScreen(Buffer &buffer, Buffer &compBuffer) {
     if (buffer[i] == compBuffer[i])
       continue;
 
-    // std::cout << i << std::endl;
-    // std::cout << "changed color to " << buffer[i].r << " " << buffer[i].g <<
-    // " " << buffer[i].b << std::endl; std::cout << "Changing pos to: " << i %
-    // terminal->props.width << " "
-    //<< std::floor(i / terminal->props.width)
-    //<< std::endl;
-
     terminal->GetPos(ss, i % terminal->props.width,
                      std::floor(i / terminal->props.width));
     terminal->GetColor(ss, buffer[i]);
   }
 
   write(STDOUT_FILENO, ss.str().c_str(), ss.str().size());
+  // std::cout << ss.str().c_str();
   compBuffer = buffer;
 }
 void Renderer::Point(Buffer &buffer, unsigned int x, unsigned int y,
