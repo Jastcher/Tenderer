@@ -17,9 +17,7 @@ static bool KeyAvailable() {
 
 Application::Application()
     : p_Terminal(std::make_unique<Terminal>()),
-      p_Renderer(std::make_unique<Renderer>(p_Terminal)),
-      buffer(p_Terminal->props.width, p_Terminal->props.height),
-      compBuffer(p_Terminal->props.width, p_Terminal->props.height) {
+      p_Renderer(std::make_unique<Renderer>(p_Terminal)) {
 
   p_Terminal->EnableRawMode();
 }
@@ -29,12 +27,14 @@ Application::~Application() {}
 unsigned int Application::Width() const { return p_Terminal->props.width; }
 unsigned int Application::Height() const { return p_Terminal->props.height; }
 
-void Application::RenderScreen() {
-  p_Renderer->RenderScreen(buffer, compBuffer);
-}
-void Application::Fill(const Color &color) { p_Renderer->Fill(buffer, color); }
+void Application::RenderScreen() { p_Renderer->RenderScreen(); }
+void Application::Fill(const Color &color) { p_Renderer->Fill(color); }
 void Application::Point(uint x, uint y, const Color &color) {
-  p_Renderer->Point(buffer, x, y, color);
+  p_Renderer->Point(x, y, color);
+}
+
+void Application::Text(uint x, uint y, const char *text, const Color &color) {
+  p_Renderer->Text(x, y, text, color);
 }
 
 void Application::SetTitle(const std::string &title) {

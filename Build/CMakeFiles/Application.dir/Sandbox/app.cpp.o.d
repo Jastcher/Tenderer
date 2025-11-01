@@ -127,17 +127,8 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward/auto_ptr.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/glue_memory_defs.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/pstl/execution_defs.h \
-  /home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstddef \
-  /usr/include/sys/types.h /usr/include/bits/stdint-intn.h \
-  /usr/include/endian.h /usr/include/bits/byteswap.h \
-  /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
-  /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
-  /home/jastcher/Programming/Tenderer/Tenderer/src/Renderer.h \
-  /home/jastcher/Programming/Tenderer/Tenderer/src/Terminal.h \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/iostream \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ostream \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ostream.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/sstream \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/istream \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ios \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/char_traits.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/localefwd.h \
@@ -159,7 +150,11 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ext/string_conversions.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstdlib \
   /usr/include/stdlib.h /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
+  /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+  /usr/include/bits/stdint-intn.h /usr/include/endian.h \
+  /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
+  /usr/include/sys/select.h /usr/include/bits/select.h \
+  /usr/include/bits/types/sigset_t.h /usr/include/alloca.h \
   /usr/include/bits/stdlib-float.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/std_abs.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstdio \
@@ -176,6 +171,7 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/charconv.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/basic_string.tcc \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/memory_resource.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/cstddef \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/locale_classes.tcc \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/system_error \
@@ -192,11 +188,15 @@ CMakeFiles/Application.dir/Sandbox/app.cpp.o: \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/locale_facets.tcc \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/basic_ios.tcc \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/ostream \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ostream.h \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/ostream.tcc \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/istream \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/istream.tcc \
-  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/sstream \
   /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/bits/sstream.tcc \
+  /home/jastcher/Programming/Tenderer/Tenderer/src/Buffer.h \
+  /home/jastcher/Programming/Tenderer/Tenderer/src/Renderer.h \
+  /home/jastcher/Programming/Tenderer/Tenderer/src/Terminal.h \
+  /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/iostream \
   /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
   /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
   /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \

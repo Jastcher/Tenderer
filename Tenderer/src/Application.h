@@ -2,6 +2,7 @@
 #pragma once
 
 #include <memory>
+#include <sstream>
 
 #include "Buffer.h"
 #include "Renderer.h"
@@ -20,6 +21,7 @@ public:
   void RenderScreen();
   void Fill(const Color &color);
   void Point(uint x, uint y, const Color &color);
+  void Text(uint x, uint y, const char *text, const Color &color);
 
   void SetTitle(const std::string &title);
   char PollKey();
@@ -27,9 +29,6 @@ public:
 private:
   std::shared_ptr<Terminal> p_Terminal;
   std::shared_ptr<Renderer> p_Renderer;
-
-  Buffer buffer;
-  Buffer compBuffer;
 };
 
 } // namespace Tenderer

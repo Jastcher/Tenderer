@@ -10,7 +10,7 @@ struct termios orig_termios;
 Terminal::Terminal() {
   struct winsize size;
   ioctl(STDOUT_FILENO, TIOCGWINSZ, &size);
-  props.width = size.ws_col;
+  props.width = size.ws_col / 2;
   props.height = size.ws_row - 1;
 
   // disable cursor
@@ -20,7 +20,7 @@ Terminal::Terminal() {
 Terminal::~Terminal() {}
 
 void Terminal::GetPos(std::stringstream &ss, unsigned int x, unsigned int y) {
-  ss << "\033[" << y + 1 << ";" << x + 1 << "H\033[K";
+  ss << "\033[" << y + 1 << ";" << x * 2 + 1 << "H";
 }
 
 void Terminal::GetColor(std::stringstream &ss, const Color &color) {
