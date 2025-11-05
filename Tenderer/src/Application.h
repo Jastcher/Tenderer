@@ -1,12 +1,14 @@
 
 #pragma once
 
+#include <chrono>
 #include <memory>
 #include <sstream>
 
 #include "Buffer.h"
-#include "Renderer.h"
 #include "Terminal.h"
+#include "render/Renderer.h"
+#include "render/WRenderer.h"
 
 namespace Tenderer {
 
@@ -19,16 +21,22 @@ public:
   unsigned int Height() const;
 
   void RenderScreen();
-  void Fill(const Color &color);
-  void Point(uint x, uint y, const Color &color);
-  void Text(uint x, uint y, const char *text, const Color &color);
-
-  void SetTitle(const std::string &title);
   char PollKey();
 
+  double dt, fps;
+
+  bool limitFps = false;
+  int maxFps = 30;
+
+  std::shared_ptr<Terminal> terminal;
+  std::shared_ptr<Renderer> renderer;
+  std::shared_ptr<WRenderer> wRenderer;
+
 private:
-  std::shared_ptr<Terminal> p_Terminal;
-  std::shared_ptr<Renderer> p_Renderer;
+  double crntTime = std::chrono::duration_cast<std::chrono::milliseconds>(
+                        std::chrono::system_clock::now().time_since_epoch())
+                        .count();
+  std::chrono::high_resolution_clock::time_point prevTime;
 };
 
 } // namespace Tenderer

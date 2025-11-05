@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/jastcher/Programming/Tenderer/Tenderer/src -I/home/jastcher/Programming/Tenderer/Tenderer/Vendor/include
 
-CXX_FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic
+CXX_FLAGS = -std=c++20 -Wall -Wextra -Wpedantic
 

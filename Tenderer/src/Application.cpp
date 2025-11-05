@@ -1,8 +1,10 @@
 #include "Application.h"
-#include "Renderer.h"
 #include "Terminal.h"
+#include "render/Renderer.h"
+#include <iterator>
 #include <memory>
 #include <pthread.h>
+#include <thread>
 
 namespace Tenderer {
 
@@ -16,31 +18,41 @@ static bool KeyAvailable() {
 }
 
 Application::Application()
-    : p_Terminal(std::make_unique<Terminal>()),
-      p_Renderer(std::make_unique<Renderer>(p_Terminal)) {
+    : terminal(std::make_unique<Terminal>()),
+      renderer(std::make_unique<Renderer>(terminal)),
+      wRenderer(std::make_unique<WRenderer>(renderer)) {
 
-  p_Terminal->EnableRawMode();
+  terminal->EnableRawMode();
 }
 
 Application::~Application() {}
 
-unsigned int Application::Width() const { return p_Terminal->props.width; }
-unsigned int Application::Height() const { return p_Terminal->props.height; }
+unsigned int Application::Width() const { return terminal->props.width; }
+unsigned int Application::Height() const { return terminal->props.height; }
 
-void Application::RenderScreen() { p_Renderer->RenderScreen(); }
-void Application::Fill(const Color &color) { p_Renderer->Fill(color); }
-void Application::Point(uint x, uint y, const Color &color) {
-  p_Renderer->Point(x, y, color);
+void Application::RenderScreen() {
+  using namespace std::chrono;
+
+  auto frameStart = high_resolution_clock::now();
+
+  renderer->RenderScreen();
+
+  auto frameEnd = high_resolution_clock::now();
+  dt = duration_cast<duration<double>>(frameEnd - prevTime).count();
+  fps = 1.0 / dt;
+  prevTime = frameEnd;
+
+  if (limitFps) {
+    double frameDuration =
+        duration_cast<duration<double>>(frameEnd - frameStart).count();
+    double targetDuration = 1.0 / maxFps;
+
+    if (frameDuration < targetDuration) {
+      std::this_thread::sleep_for(
+          duration<double>(targetDuration - frameDuration));
+    }
+  }
 }
-
-void Application::Text(uint x, uint y, const char *text, const Color &color) {
-  p_Renderer->Text(x, y, text, color);
-}
-
-void Application::SetTitle(const std::string &title) {
-  p_Terminal->SetTitle(title);
-}
-
 char Application::PollKey() {
   char c;
   if (KeyAvailable() && read(STDIN_FILENO, &c, 1) == 1)

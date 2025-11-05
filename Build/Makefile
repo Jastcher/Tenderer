@@ -214,30 +214,6 @@ Tenderer/src/Buffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Buffer.cpp.s
 .PHONY : Tenderer/src/Buffer.cpp.s
 
-Tenderer/src/Renderer.o: Tenderer/src/Renderer.cpp.o
-.PHONY : Tenderer/src/Renderer.o
-
-# target to build an object file
-Tenderer/src/Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.o
-.PHONY : Tenderer/src/Renderer.cpp.o
-
-Tenderer/src/Renderer.i: Tenderer/src/Renderer.cpp.i
-.PHONY : Tenderer/src/Renderer.i
-
-# target to preprocess a source file
-Tenderer/src/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.i
-.PHONY : Tenderer/src/Renderer.cpp.i
-
-Tenderer/src/Renderer.s: Tenderer/src/Renderer.cpp.s
-.PHONY : Tenderer/src/Renderer.s
-
-# target to generate assembly for a file
-Tenderer/src/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Renderer.cpp.s
-.PHONY : Tenderer/src/Renderer.cpp.s
-
 Tenderer/src/Terminal.o: Tenderer/src/Terminal.cpp.o
 .PHONY : Tenderer/src/Terminal.o
 
@@ -262,6 +238,54 @@ Tenderer/src/Terminal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/Terminal.cpp.s
 .PHONY : Tenderer/src/Terminal.cpp.s
 
+Tenderer/src/render/Renderer.o: Tenderer/src/render/Renderer.cpp.o
+.PHONY : Tenderer/src/render/Renderer.o
+
+# target to build an object file
+Tenderer/src/render/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/render/Renderer.cpp.o
+.PHONY : Tenderer/src/render/Renderer.cpp.o
+
+Tenderer/src/render/Renderer.i: Tenderer/src/render/Renderer.cpp.i
+.PHONY : Tenderer/src/render/Renderer.i
+
+# target to preprocess a source file
+Tenderer/src/render/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/render/Renderer.cpp.i
+.PHONY : Tenderer/src/render/Renderer.cpp.i
+
+Tenderer/src/render/Renderer.s: Tenderer/src/render/Renderer.cpp.s
+.PHONY : Tenderer/src/render/Renderer.s
+
+# target to generate assembly for a file
+Tenderer/src/render/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/render/Renderer.cpp.s
+.PHONY : Tenderer/src/render/Renderer.cpp.s
+
+Tenderer/src/render/WRenderer.o: Tenderer/src/render/WRenderer.cpp.o
+.PHONY : Tenderer/src/render/WRenderer.o
+
+# target to build an object file
+Tenderer/src/render/WRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/render/WRenderer.cpp.o
+.PHONY : Tenderer/src/render/WRenderer.cpp.o
+
+Tenderer/src/render/WRenderer.i: Tenderer/src/render/WRenderer.cpp.i
+.PHONY : Tenderer/src/render/WRenderer.i
+
+# target to preprocess a source file
+Tenderer/src/render/WRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/render/WRenderer.cpp.i
+.PHONY : Tenderer/src/render/WRenderer.cpp.i
+
+Tenderer/src/render/WRenderer.s: Tenderer/src/render/WRenderer.cpp.s
+.PHONY : Tenderer/src/render/WRenderer.s
+
+# target to generate assembly for a file
+Tenderer/src/render/WRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tenderer.dir/build.make CMakeFiles/Tenderer.dir/Tenderer/src/render/WRenderer.cpp.s
+.PHONY : Tenderer/src/render/WRenderer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -281,12 +305,15 @@ help:
 	@echo "... Tenderer/src/Buffer.o"
 	@echo "... Tenderer/src/Buffer.i"
 	@echo "... Tenderer/src/Buffer.s"
-	@echo "... Tenderer/src/Renderer.o"
-	@echo "... Tenderer/src/Renderer.i"
-	@echo "... Tenderer/src/Renderer.s"
 	@echo "... Tenderer/src/Terminal.o"
 	@echo "... Tenderer/src/Terminal.i"
 	@echo "... Tenderer/src/Terminal.s"
+	@echo "... Tenderer/src/render/Renderer.o"
+	@echo "... Tenderer/src/render/Renderer.i"
+	@echo "... Tenderer/src/render/Renderer.s"
+	@echo "... Tenderer/src/render/WRenderer.o"
+	@echo "... Tenderer/src/render/WRenderer.i"
+	@echo "... Tenderer/src/render/WRenderer.s"
 .PHONY : help
 
 

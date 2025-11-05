@@ -10,7 +10,7 @@ struct termios orig_termios;
 Terminal::Terminal() {
   struct winsize size;
   ioctl(STDOUT_FILENO, TIOCGWINSZ, &size);
-  props.width = size.ws_col / 2;
+  props.width = size.ws_col / 2 + 1;
   props.height = size.ws_row - 1;
 
   // disable cursor
