@@ -3,6 +3,7 @@
 # ----------------------------
 
 # Build directories
+/Build/
 /build/
 /build-*/
 /out/
