@@ -1,1 +1,0 @@
-/usr/bin/clang++ -Xlinker --dependency-file=CMakeFiles/Application.dir/link.d CMakeFiles/Application.dir/Sandbox/app.cpp.o -o /home/jastcher/Programming/Tenderer/bin/Application  libTenderer.a
