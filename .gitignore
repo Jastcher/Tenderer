@@ -12,6 +12,8 @@
 /dist/
 /.cache/
 
+compile_commands.json
+
 # CMake build files
 CMakeFiles/
 CMakeCache.txt
