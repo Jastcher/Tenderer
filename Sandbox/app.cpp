@@ -1,8 +1,12 @@
 #include "Application.h"
+#include "Mesh.h"
+#include "Object.h"
+#include "Scene.h"
 #include "glm/trigonometric.hpp"
 #include <cmath>
 #include <format>
 #include <glm/gtx/transform.hpp>
+#include <memory>
 #include <string>
 #include <threads.h>
 
@@ -10,17 +14,21 @@ int main() {
 
   Tenderer::Application app;
 
-  // Object cube = Object(Mesh::CreateCube());
+  // Object cube = Object(Mesh::CreateCube()); ??
+
+  Tenderer::Scene scene1;
+  for (int i = 0; i < 1; i++) {
+    std::shared_ptr<Tenderer::Object> object =
+        std::make_shared<Tenderer::Object>(Tenderer::Mesh::CreatePlane());
+    object->transform.position = glm::vec3(0, 0, 0);
+    scene1.AddObject(object);
+  }
   // Object monkey = Object(Mesh::LoadObj("monkey.obj")) ;
   //
-  // Scene scene1;
-  // scene1.camera.projection = Camera::Projection::perspective
+  // scene1.camera.projection = Camera::Projection::Perspective
   // scene1.camera.fov = 90.0f
   //
-  // scene1.Add(cube);
-  // cube.position.x += 1;
   //
-  // scene1.Render();
   //
   app.limitFps = true;
   app.maxFps = 30;
@@ -58,8 +66,8 @@ int main() {
     }
 #endif
 
-    glm::mat4 rot = glm::rotate(glm::mat4(1.0f), glm::radians((float)it),
-                                glm::vec3(1, 0, 1));
+    // glm::mat4 rot = glm::rotate(glm::mat4(1.0f), glm::radians((float)it),
+    //                             glm::vec3(1, 0, 1));
 
     // app.wRenderer->Line(rot, glm::vec2(-0.2, -0.2), glm::vec2(0.2, 0.2),
     //{255, 0, 0}, {0, 0, 255});
@@ -67,12 +75,13 @@ int main() {
     // app.wRenderer->Triangle(rot, {-0.5, -0.5}, {0.5, -0.5}, {0.0, 0.5},
     //                         {255, 0, 0}, {0, 255, 0}, {0, 0, 255});
 
-    app.wRenderer->Square(rot, {-0.5, -0.5, 0}, {0.5, -0.5, 0}, {0.5, 0.5, 0},
-                          {-0.5, 0.5, 0}, {255, 0, 0}, {0, 255, 0}, {0, 0, 255},
-                          {255, 255, 0});
-    // app.renderer->Line(15, 15, 60, 34, {255, 1, 128}, {0, 255, 255});
-    // app.renderer->Line(60, 34, 30, 30, {255, 255, 1}, {0, 0, 255});
-    // app.renderer->Line(30, 30, 15, 15, {255, 1, 255}, {0, 255, 0});
+    // app.wRenderer->Square(rot, {-0.5, -0.5, 0}, {0.5, -0.5, 0}, {0.5, 0.5,
+    // 0},
+    //                       {-0.5, 0.5, 0}, {255, 0, 0}, {0, 255, 0}, {0, 0,
+    //                       255}, {255, 255, 0});
+    //  app.renderer->Line(15, 15, 60, 34, {255, 1, 128}, {0, 255, 255});
+    //  app.renderer->Line(60, 34, 30, 30, {255, 255, 1}, {0, 0, 255});
+    //  app.renderer->Line(30, 30, 15, 15, {255, 1, 255}, {0, 255, 0});
 
     // app.renderer->Triangle(15, 15, 60, 34, 30, 30, {255, 0, 0}, {0, 255, 0},
     //{0, 0, 255});
@@ -85,7 +94,12 @@ int main() {
       app.renderer->Text(10, 10, std::format("FPS: {:.2f}", app.fps).c_str(),
                          {255, 0, 0});
 
-    app.RenderScreen();
+    for (auto &object : scene1.objects) {
+      object->transform.scale = glm::vec3(glm::abs(glm::sin(it / 100.0f)));
+      object->transform.rotation = glm::vec3(it, 0, it / 1.0f);
+    }
+
+    app.RenderScene(scene1);
 
     it++;
   }

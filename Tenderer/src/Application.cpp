@@ -30,6 +30,11 @@ Application::~Application() {}
 unsigned int Application::Width() const { return terminal->props.width; }
 unsigned int Application::Height() const { return terminal->props.height; }
 
+void Application::RenderScene(const Scene &scene) {
+  wRenderer->RenderScene(scene);
+  RenderScreen();
+}
+
 void Application::RenderScreen() {
   using namespace std::chrono;
 

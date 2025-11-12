@@ -1,5 +1,8 @@
 #include "WRenderer.h"
+#include "Mesh.h"
 #include "Renderer.h"
+#include "Scene.h"
+#include "glm/ext/matrix_transform.hpp"
 #include <memory>
 
 namespace Tenderer {
@@ -75,5 +78,45 @@ void WRenderer::Square(glm::mat4 transform, glm::vec3 p1, glm::vec3 p2,
                        color3);
   m_Renderer->Triangle(t3.x, t3.y, t4.x, t4.y, t1.x, t1.y, color3, color4,
                        color1);
+}
+
+void WRenderer::RenderObject(const std::shared_ptr<Object> &object) {
+
+  const Mesh &mesh = object->mesh;
+
+  glm::mat4 model =
+      glm::translate(glm::mat4(1.0f), object->transform.position) *
+      glm::rotate(glm::mat4(1.0f), glm::radians(object->transform.rotation.x),
+                  glm::vec3(1, 0, 0)) *
+      glm::rotate(glm::mat4(1.0f), glm::radians(object->transform.rotation.y),
+                  glm::vec3(0, 1, 0)) *
+      glm::rotate(glm::mat4(1.0f), glm::radians(object->transform.rotation.z),
+                  glm::vec3(0, 0, 1)) *
+      glm::scale(glm::mat4(1.0f), object->transform.scale);
+
+  switch (mesh.renderType) {
+  case RenderType::TRIANGLES: {
+    for (int i = 0; i < mesh.indices.size(); i += 3) {
+      Triangle(model, mesh.vertices[mesh.indices[i]],
+               mesh.vertices[mesh.indices[i + 1]],
+               mesh.vertices[mesh.indices[i + 2]], mesh.colors[mesh.indices[i]],
+               mesh.colors[mesh.indices[i + 1]],
+               mesh.colors[mesh.indices[i + 2]]);
+    }
+    break;
+  }
+  case RenderType::LINES: {
+    break;
+  }
+  case RenderType::POINTS: {
+    break;
+  }
+  }
+}
+void WRenderer::RenderScene(const Scene &scene) {
+
+  for (const auto &object : scene.objects) {
+    RenderObject(object);
+  }
 }
 } // namespace Tenderer

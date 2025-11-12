@@ -20,6 +20,7 @@ public:
   unsigned int Width() const;
   unsigned int Height() const;
 
+  void RenderScene(const Scene &scene);
   void RenderScreen();
   char PollKey();
 

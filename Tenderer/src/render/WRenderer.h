@@ -1,6 +1,8 @@
 #pragma once
 
+#include "Mesh.h"
 #include "Renderer.h"
+#include "Scene.h"
 #include "glm/glm.hpp"
 
 #include <memory>
@@ -21,6 +23,9 @@ public:
   void Square(glm::mat4 transform, glm::vec3 p1, glm::vec3 p2, glm::vec3 p3,
               glm::vec3 p4, const Color &color1, const Color &color2,
               const Color &color3, const Color &color4);
+
+  void RenderObject(const std::shared_ptr<Object> &object);
+  void RenderScene(const Scene &scene);
 
 private:
   std::shared_ptr<Renderer> m_Renderer;
