@@ -1,0 +1,5 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jastcher/Programming/Tenderer/Build
+[ 81%] Built target Tenderer
+[100%] Built target Application

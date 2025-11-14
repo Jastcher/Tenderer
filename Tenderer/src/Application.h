@@ -24,7 +24,7 @@ public:
   void RenderScreen();
   char PollKey();
 
-  double dt, fps;
+  double dt, fps = 0.0;
 
   bool limitFps = false;
   int maxFps = 30;

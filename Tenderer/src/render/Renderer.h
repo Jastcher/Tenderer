@@ -32,9 +32,9 @@ public:
   void Triangle(int x1, int y1, int x2, int y2, int x3, int y3,
                 const Color &color1, const Color &color2, const Color &color3);
 
-private:
   std::shared_ptr<Terminal> terminal;
 
+private:
   std::stringstream textBuffer;
 
   Buffer buffer;

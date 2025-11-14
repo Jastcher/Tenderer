@@ -19,7 +19,10 @@ Color Lerp(Color a, Color b, float t) {
 Renderer::Renderer(std::shared_ptr<Terminal> _terminal)
     : terminal(_terminal),
       buffer(terminal->props.width, terminal->props.height),
-      compBuffer(terminal->props.width * terminal->props.height) {}
+      compBuffer(terminal->props.width * terminal->props.height) {
+
+  std::fill(compBuffer.begin(), compBuffer.end(), true);
+}
 
 Renderer::~Renderer() {}
 
@@ -28,8 +31,10 @@ unsigned int Renderer::Height() const { return terminal->props.height; }
 
 void Renderer::Fill(const Color &color) {
   for (size_t i = 0; i < buffer.Size(); i++) {
-    buffer[i] = color;
-    compBuffer[i] = true;
+    if (buffer[i] != color) {
+      compBuffer[i] = 1;
+      buffer[i] = color;
+    }
   }
 }
 

@@ -10,7 +10,7 @@ public:
   Scene();
   ~Scene();
 
-  void AddObject(std::shared_ptr<Object> &object);
+  void AddObject(std::shared_ptr<Object> object);
   void Render();
 
   std::vector<std::shared_ptr<Object>> objects;

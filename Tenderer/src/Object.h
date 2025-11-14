@@ -16,6 +16,8 @@ public:
   Object(const Mesh &mesh);
   ~Object();
 
+  glm::mat4 GetModel() const;
+
   Transform transform;
 
   Mesh mesh;

@@ -40,6 +40,7 @@ void Application::RenderScreen() {
 
   auto frameStart = high_resolution_clock::now();
 
+  wRenderer->ClearDepthBuffer();
   renderer->RenderScreen();
 
   auto frameEnd = high_resolution_clock::now();

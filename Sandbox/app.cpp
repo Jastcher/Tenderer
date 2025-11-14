@@ -1,7 +1,9 @@
 #include "Application.h"
+#include "Buffer.h"
 #include "Mesh.h"
 #include "Object.h"
 #include "Scene.h"
+#include "glm/fwd.hpp"
 #include "glm/trigonometric.hpp"
 #include <cmath>
 #include <format>
@@ -17,12 +19,20 @@ int main() {
   // Object cube = Object(Mesh::CreateCube()); ??
 
   Tenderer::Scene scene1;
-  for (int i = 0; i < 1; i++) {
-    std::shared_ptr<Tenderer::Object> object =
-        std::make_shared<Tenderer::Object>(Tenderer::Mesh::CreatePlane());
-    object->transform.position = glm::vec3(0, 0, 0);
-    scene1.AddObject(object);
-  }
+
+  std::shared_ptr<Tenderer::Object> cube =
+      std::make_shared<Tenderer::Object>(Tenderer::Mesh::CreateCube());
+
+  std::shared_ptr<Tenderer::Object> points =
+      std::make_shared<Tenderer::Object>(Tenderer::Mesh::CreateCube());
+  points->mesh.renderType = Tenderer::RenderType::POINTS;
+
+  points->mesh.colors = {{255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0},
+                         {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}};
+
+  scene1.AddObject(points);
+  scene1.AddObject(cube);
+
   // Object monkey = Object(Mesh::LoadObj("monkey.obj")) ;
   //
   // scene1.camera.projection = Camera::Projection::Perspective
@@ -32,71 +42,31 @@ int main() {
   //
   app.limitFps = true;
   app.maxFps = 30;
+  app.wRenderer->wireframeMode = true;
 
   unsigned int it = 0;
-  float aspect = (float)app.Width() / (float)app.Height();
-  while (1) {
-
-    if (app.PollKey() == 'q')
-      break;
+  bool running = true;
+  while (running) {
 
     app.renderer->Fill({0, 0, 0});
 
-#if 0
-    for (uint y = 0; y < app.Height(); y++) {
-      for (uint x = 0; x < app.Width(); x++) {
-        app.renderer->Point(
-            x, y,
-            {static_cast<unsigned char>(x / (float)app.Width() * 255.0f),
-             static_cast<unsigned char>(y / (float)app.Height() * 255.0f),
-             static_cast<unsigned char>(std::abs(std::sin(it / 50.0f)) *
-                                        255.0f)});
-      }
+    switch (app.PollKey()) {
+    case 'q':
+      running = false;
+      break;
+    case 'w':
+      app.wRenderer->wireframeMode = !app.wRenderer->wireframeMode;
+      break;
     }
-#endif
 
-#if 0
-    for (uint y = 0; y < app.Height(); y++) {
-      for (uint x = 0; x < app.Width(); x++) {
-        if ((x + y) % 2 == 0)
-          app.renderer->Point(x, y, {1, 1, 1});
-        else
-          app.renderer->Point(x, y, {255, 255, 255});
-      }
-    }
-#endif
+    if (it % 20 == 0) {
 
-    // glm::mat4 rot = glm::rotate(glm::mat4(1.0f), glm::radians((float)it),
-    //                             glm::vec3(1, 0, 1));
-
-    // app.wRenderer->Line(rot, glm::vec2(-0.2, -0.2), glm::vec2(0.2, 0.2),
-    //{255, 0, 0}, {0, 0, 255});
-
-    // app.wRenderer->Triangle(rot, {-0.5, -0.5}, {0.5, -0.5}, {0.0, 0.5},
-    //                         {255, 0, 0}, {0, 255, 0}, {0, 0, 255});
-
-    // app.wRenderer->Square(rot, {-0.5, -0.5, 0}, {0.5, -0.5, 0}, {0.5, 0.5,
-    // 0},
-    //                       {-0.5, 0.5, 0}, {255, 0, 0}, {0, 255, 0}, {0, 0,
-    //                       255}, {255, 255, 0});
-    //  app.renderer->Line(15, 15, 60, 34, {255, 1, 128}, {0, 255, 255});
-    //  app.renderer->Line(60, 34, 30, 30, {255, 255, 1}, {0, 0, 255});
-    //  app.renderer->Line(30, 30, 15, 15, {255, 1, 255}, {0, 255, 0});
-
-    // app.renderer->Triangle(15, 15, 60, 34, 30, 30, {255, 0, 0}, {0, 255, 0},
-    //{0, 0, 255});
-
-    // app.renderer->Text(15, 15, "15;15", {0, 0, 0});
-    // app.renderer->Text(60, 34, "60;34", {0, 0, 0});
-    // app.renderer->Text(30, 30, "30;30", {0, 0, 0});
-
-    if (it % 20 == 0)
-      app.renderer->Text(10, 10, std::format("FPS: {:.2f}", app.fps).c_str(),
+      app.renderer->Text(10, 10, std::format("FPS: {:.4f}", app.fps).c_str(),
                          {255, 0, 0});
+    }
 
     for (auto &object : scene1.objects) {
-      object->transform.scale = glm::vec3(glm::abs(glm::sin(it / 100.0f)));
-      object->transform.rotation = glm::vec3(it, 0, it / 1.0f);
+      object->transform.rotation = glm::vec3(it, 0, it);
     }
 
     app.RenderScene(scene1);
