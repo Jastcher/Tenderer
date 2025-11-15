@@ -24,7 +24,6 @@ Makefile
 
 # Compiled object files
 *.o
-*.obj
 *.lo
 *.slo
 

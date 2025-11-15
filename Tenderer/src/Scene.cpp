@@ -4,7 +4,7 @@
 
 namespace Tenderer {
 
-Scene::Scene() {}
+Scene::Scene() : camera() {}
 Scene::~Scene() {}
 
 void Scene::AddObject(std::shared_ptr<Object> object) {

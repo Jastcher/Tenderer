@@ -36,7 +36,8 @@ public:
               const Color &color1, const Color &color2, const Color &color3,
               const Color &color4);
 
-  void RenderObject(const std::shared_ptr<Object> &object);
+  void RenderObject(const std::shared_ptr<Object> &object,
+                    const glm::mat4 &camera = glm::mat4(1.0f));
   void RenderScene(const Scene &scene);
 
   void ToScreenSpace(glm::vec4 &p);

@@ -1,4 +1,5 @@
 #pragma once
+#include "Camera.h"
 #include "Object.h"
 
 #include <memory>
@@ -11,10 +12,9 @@ public:
   ~Scene();
 
   void AddObject(std::shared_ptr<Object> object);
-  void Render();
 
   std::vector<std::shared_ptr<Object>> objects;
-  // Camera camera;
+  Camera camera;
 };
 
 } // namespace Tenderer

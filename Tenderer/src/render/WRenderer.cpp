@@ -24,19 +24,29 @@ void WRenderer::Point(const glm::mat4 &transform, const glm::vec3 &p1,
 
   glm::vec4 t1 = transform * glm::vec4(p1, 1.0f);
 
-  t1 /= t1.w;
+  if (t1.w != 0.0f)
+    t1 /= t1.w;
 
   float z1 = t1.z;
 
   ToScreenSpace(t1);
 
   int width = m_Renderer->Width();
-  int idx = t1.x + t1.y * width;
+  int height = m_Renderer->Height();
+
+  int x = t1.x;
+  int y = t1.y;
+
+  int idx = y * width + x;
+  if (idx < 0 || idx >= zbuffer.size())
+    return;
+
   if (z1 < zbuffer[idx]) {
     zbuffer[idx] = z1;
-    m_Renderer->Point(t1.x, t1.y, color1);
+    m_Renderer->Point(x, y, color1);
   }
 }
+
 void WRenderer::Line(const glm::mat4 &transform, const glm::vec3 &p1,
                      const glm::vec3 &p2, const Color &color1,
                      const Color &color2) {
@@ -135,6 +145,16 @@ void WRenderer::TriangleFilled(const glm::mat4 &transform, const glm::vec3 &p1,
   int minY = (int)std::floor(std::min(std::min(t1.y, t2.y), t3.y));
   int maxY = (int)std::ceil(std::max(std::max(t1.y, t2.y), t3.y));
 
+  // Clamp bounding box to screen
+  minX = std::max(minX, 0);
+  maxX = std::min(maxX, width - 1);
+  minY = std::max(minY, 0);
+  maxY = std::min(maxY, height - 1);
+
+  // If triangle is completely out of screen
+  if (minX > maxX || minY > maxY)
+    return;
+
   // Triangle signed area
   float area = (t2.x - t1.x) * (t3.y - t1.y) - (t2.y - t1.y) * (t3.x - t1.x);
   if (area == 0.0f)
@@ -177,17 +197,23 @@ void WRenderer::TriangleFilled(const glm::mat4 &transform, const glm::vec3 &p1,
   }
 }
 
-void WRenderer::RenderObject(const std::shared_ptr<Object> &object) {
+void WRenderer::RenderObject(const std::shared_ptr<Object> &object,
+                             const glm::mat4 &cameraMatrix) {
   const Mesh &mesh = object->mesh;
 
+  glm::mat4 mvp = cameraMatrix * object->GetModel();
+
   switch (mesh.renderType) {
+
   case RenderType::TRIANGLES: {
     for (size_t i = 0; i < mesh.indices.size(); i += 3) {
-      TriangleFilled(
-          object->GetModel(), mesh.vertices[mesh.indices[i]],
-          mesh.vertices[mesh.indices[i + 1]],
-          mesh.vertices[mesh.indices[i + 2]], mesh.colors[mesh.indices[i]],
-          mesh.colors[mesh.indices[i + 1]], mesh.colors[mesh.indices[i + 2]]);
+      int i0 = mesh.indices[i];
+      int i1 = mesh.indices[i + 1];
+      int i2 = mesh.indices[i + 2];
+
+      TriangleFilled(mvp, mesh.vertices[i0], mesh.vertices[i1],
+                     mesh.vertices[i2], mesh.colors[i0], mesh.colors[i1],
+                     mesh.colors[i2]);
     }
     break;
   }
@@ -198,21 +224,21 @@ void WRenderer::RenderObject(const std::shared_ptr<Object> &object) {
       int i1 = mesh.indices[i + 1];
       int i2 = mesh.indices[i + 2];
 
-      Line(object->GetModel(), mesh.vertices[i0], mesh.vertices[i1],
-           mesh.colors[i0], mesh.colors[i1]);
+      Line(mvp, mesh.vertices[i0], mesh.vertices[i1], mesh.colors[i0],
+           mesh.colors[i1]);
 
-      Line(object->GetModel(), mesh.vertices[i1], mesh.vertices[i2],
-           mesh.colors[i1], mesh.colors[i2]);
+      Line(mvp, mesh.vertices[i1], mesh.vertices[i2], mesh.colors[i1],
+           mesh.colors[i2]);
 
-      Line(object->GetModel(), mesh.vertices[i2], mesh.vertices[i0],
-           mesh.colors[i2], mesh.colors[i0]);
+      Line(mvp, mesh.vertices[i2], mesh.vertices[i0], mesh.colors[i2],
+           mesh.colors[i0]);
     }
     break;
   }
 
   case RenderType::POINTS: {
     for (size_t i = 0; i < mesh.vertices.size(); i++) {
-      Point(object->GetModel(), mesh.vertices[i], mesh.colors[i]);
+      Point(mvp, mesh.vertices[i], mesh.colors[i]);
     }
     break;
   }
@@ -220,9 +246,10 @@ void WRenderer::RenderObject(const std::shared_ptr<Object> &object) {
 }
 
 void WRenderer::RenderScene(const Scene &scene) {
+  glm::mat4 cameraMatrix = scene.camera.GetCameraMatrix();
 
   for (const auto &object : scene.objects) {
-    RenderObject(object);
+    RenderObject(object, cameraMatrix);
   }
 }
 

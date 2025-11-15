@@ -15,6 +15,7 @@ public:
 
   static Mesh CreatePlane(); //??
   static Mesh CreateCube();  //??
+  static Mesh LoadObj(const char *path);
 
   std::vector<glm::vec3> vertices;
   std::vector<Color> colors;

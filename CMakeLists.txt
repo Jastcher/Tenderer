@@ -18,6 +18,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin/)
 file(GLOB_RECURSE SRC_FILES Tenderer/src/*.cpp Tenderer/Vendor/src/*.cpp)
 file(GLOB_RECURSE SRC_SANDBOX_FILES Sandbox/*.cpp Sandbox/vendor/src/*.cpp)
 
+
 add_compile_options(-Wall -Wextra -Wpedantic)
 add_library(Tenderer STATIC ${SRC_FILES})
 target_include_directories(Tenderer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/Tenderer/src ${CMAKE_CURRENT_SOURCE_DIR}/Tenderer/Vendor/include)

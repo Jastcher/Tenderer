@@ -11,7 +11,10 @@ cmake --build .
 
 cd ../bin/
 if [ $1 ]; then
-	./Application
+  ./Application 2>errors.log
 fi
+
+echo ""
+cat errors.log
 
 cd ..
