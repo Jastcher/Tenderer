@@ -39,18 +39,19 @@ void Terminal::DisableRawMode() {
 
 void Terminal::EnableRawMode() {
   tcgetattr(STDIN_FILENO, &orig_termios);
-  atexit(Terminal::DisableRawMode); // ensure it’s restored on exit
+  atexit(Terminal::DisableRawMode);
 
   struct termios raw = orig_termios;
   raw.c_lflag &= ~(ECHO | ICANON | ISIG | IEXTEN);
   raw.c_iflag &= ~(IXON | ICRNL | BRKINT | INPCK | ISTRIP);
-  raw.c_cflag |= (CS8);
+  raw.c_cflag |= CS8;
   raw.c_oflag &= ~(OPOST);
 
-  tcsetattr(STDIN_FILENO, TCSAFLUSH, &raw);
+  // non-blocking read returns -1 if no input
+  raw.c_cc[VMIN] = 0;
+  raw.c_cc[VTIME] = 0;
 
-  // int flags = fcntl(STDIN_FILENO, F_GETFL, 0);
-  //  fcntl(STDIN_FILENO, F_SETFL, flags | O_NONBLOCK);
+  tcsetattr(STDIN_FILENO, TCSAFLUSH, &raw);
 }
 
 } // namespace Tenderer

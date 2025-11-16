@@ -2,6 +2,7 @@
 #pragma once
 
 #include <chrono>
+#include <map>
 #include <memory>
 #include <sstream>
 
@@ -22,7 +23,7 @@ public:
 
   void RenderScene(const Scene &scene);
   void RenderScreen();
-  char PollKey();
+  void PollKey();
 
   double dt, fps = 0.0;
 
@@ -32,6 +33,8 @@ public:
   std::shared_ptr<Terminal> terminal;
   std::shared_ptr<Renderer> renderer;
   std::shared_ptr<WRenderer> wRenderer;
+
+  std::map<char, bool> keyMap;
 
 private:
   double crntTime = std::chrono::duration_cast<std::chrono::milliseconds>(

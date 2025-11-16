@@ -29,6 +29,11 @@ void WRenderer::Point(const glm::mat4 &transform, const glm::vec3 &p1,
 
   float z1 = t1.z;
 
+  if (t1.z < -1.0f || t1.z > 1.0f || t1.x < -1.0f || t1.x > 1.0f ||
+      t1.y < -1.0f || t1.y > 1.0f) {
+    return; // ignoruj tento vertex
+  }
+
   ToScreenSpace(t1);
 
   int width = m_Renderer->Width();
@@ -132,6 +137,11 @@ void WRenderer::TriangleFilled(const glm::mat4 &transform, const glm::vec3 &p1,
     t2 /= t2.w;
   if (t3.w != 0)
     t3 /= t3.w;
+
+  if (t1.z < -1.0f || t1.z > 1.0f || t1.x < -1.0f || t1.x > 1.0f ||
+      t1.y < -1.0f || t1.y > 1.0f) {
+    return; // ignoruj tento vertex
+  }
 
   int width = m_Renderer->Width();
   int height = m_Renderer->Height();

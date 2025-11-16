@@ -1,5 +1,6 @@
 #pragma once
 #include "glm/glm.hpp"
+#include <map>
 
 namespace Tenderer {
 
@@ -14,13 +15,20 @@ public:
   glm::mat4 GetView() const;
   glm::mat4 GetCameraMatrix() const;
 
-  void Input(char c);
+  void Input(const std::map<char, bool> &keyMap);
 
-  glm::vec3 position = {0, 0, -3};
-  glm::vec3 orientation = {0, 0, 1};
-  float fov = 90.0f;
-  float aspect;
+  // camera transform
+  glm::vec3 position;
+  glm::vec3 forward;
+  glm::vec3 worldUp;
+  glm::vec3 up;
+  glm::vec3 right;
 
+  float yaw = 0.0f;
+  float pitch = 0.0f;
+  // projection parameters
+  float fov = 10.0f;
+  float aspect = 1.0f;
   float orthoZoom = 1.0f;
   float nearPlane = 0.1f;
   float farPlane = 10.0f;
@@ -28,6 +36,7 @@ public:
   Projection projectionType = Projection::ORTOGRAPHIC;
 
 private:
+  void UpdateCameraVectors();
   glm::mat4 projection;
   glm::mat4 view;
 };

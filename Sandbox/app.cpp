@@ -21,7 +21,7 @@ int main() {
 
   Tenderer::Scene scene1;
   scene1.camera.aspect = (float)app.Width() / app.Height();
-  scene1.camera.projectionType = Tenderer::Projection::ORTOGRAPHIC;
+  scene1.camera.projectionType = Tenderer::Projection::PERSPECTIVE;
   scene1.camera.position.x = 9.6f;
   scene1.camera.position.z = -10.0f;
   scene1.camera.orthoZoom = 8.0f;
@@ -61,43 +61,38 @@ int main() {
     i++;
   }
 
-  // Object monkey = Object(Mesh::LoadObj("monkey.obj")) ;
-  //
-  // scene1.camera.projection = Camera::Projection::Perspective
-  // scene1.camera.fov = 90.0f
-  //
-  //
-  //
-  app.limitFps = true;
+  app.limitFps = false;
   app.maxFps = 60;
 
   unsigned int it = 0;
   bool running = true;
   while (running) {
+    app.PollKey();
 
     app.renderer->Fill({0, 0, 0});
+    // scene1.camera.Input(key);
+    if (app.keyMap['q']) {
 
-    char key = app.PollKey();
-    scene1.camera.Input(key);
-    switch (key) {
-    case 'q':
       running = false;
       break;
-    case 'c':
+    }
+    if (app.keyMap['c']) {
+
       for (auto &object : scene1.objects) {
         if (object->mesh.renderType == Tenderer::RenderType::TRIANGLES)
           object->mesh.renderType = Tenderer::RenderType::POINTS;
         else
           object->mesh.renderType = Tenderer::RenderType::TRIANGLES;
       }
-      break;
-    case 'p':
-      if (scene1.camera.projectionType == Tenderer::Projection::ORTOGRAPHIC)
-        scene1.camera.projectionType = Tenderer::Projection::PERSPECTIVE;
-      else
-        scene1.camera.projectionType = Tenderer::Projection::ORTOGRAPHIC;
-      break;
     }
+
+    if (app.keyMap['+']) {
+      scene1.camera.fov -= 10.0f;
+    }
+    if (app.keyMap['-']) {
+      scene1.camera.fov += 10.0f;
+    }
+    scene1.camera.Input(app.keyMap);
 
     if (it % 20 == 0) {
 
@@ -114,9 +109,9 @@ int main() {
                        {20, 20, 20});
     app.renderer->Text(10, 22,
                        std::format("Orientation: {:.2f}, {:.2f}, {:.2f}",
-                                   scene1.camera.orientation.x,
-                                   scene1.camera.orientation.y,
-                                   scene1.camera.orientation.z)
+                                   scene1.camera.forward.x,
+                                   scene1.camera.forward.y,
+                                   scene1.camera.forward.z)
                            .c_str(),
                        {20, 20, 20});
     int vertices = 0;

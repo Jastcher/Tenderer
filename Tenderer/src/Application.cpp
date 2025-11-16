@@ -59,11 +59,14 @@ void Application::RenderScreen() {
     }
   }
 }
-char Application::PollKey() {
-  char c;
-  if (KeyAvailable() && read(STDIN_FILENO, &c, 1) == 1)
-    return c;
-  return 0; // no key pressed
+void Application::PollKey() {
+  unsigned char c;
+  keyMap.clear();
+  while (true) {
+    ssize_t n = read(STDIN_FILENO, &c, 1);
+    if (n <= 0)
+      break;
+    keyMap[c] = true;
+  }
 }
-
 } // namespace Tenderer
